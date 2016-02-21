@@ -52,16 +52,16 @@
 		battleStateMachine.goNextState ();
 	}
 	public void OnGUI() {
-		if(battleStateMachine.CurrentBattleState != BattleStateMachine.BattleStates.OFF && battleStateMachine.CurrentBattleState != BattleStateMachine.BattleStates.END) {
+		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
 			foreach(var ability in PlayerInformation.PlayerActor.CombatMoveSet.Values) {
 				if( GUILayout.Button (ability.Name)) {
 					battleCalculator.applyDamage (Enemy, ability);
 					battleStateMachine.goNextState ();
 				}
 			}
-			GUILayout.Label ("Player Health: " + PlayerInformation.PlayerActor.Health);
-			GUILayout.Label ("Enemy Health: " + Enemy.Health);
+
 		}
-		
+		GUILayout.Label ("Player Health: " + PlayerInformation.PlayerActor.Health);
+		GUILayout.Label ("Enemy Health: " + Enemy.Health);
 	}
 } 
