@@ -16,7 +16,7 @@ public class BattleStateMachine  {
 
 	public BattleStateMachine() {
 
-		CurrentBattleState = BattleStates.OFF;
+		currentBattleState = BattleStates.OFF;
 
 	}
 
@@ -42,8 +42,10 @@ public class BattleStateMachine  {
 			break;
 		case BattleStates.ENEMYTURN:
 			currentBattleState = BattleStates.ENDENEMYTURN;
+			break;
 		case BattleStates.ENDENEMYTURN:
 			currentBattleState = BattleStates.PLAYERTURN;
+			break;
 		}
 	}
 
@@ -53,6 +55,14 @@ public class BattleStateMachine  {
 		 * Should be triggered after one player has 
 		 * forfeited or won/lost
 		 */
+		currentBattleState = BattleStates.END;
+	}
+	public void StartBattle() {
+		/*
+		 * initiates the battle state machine,
+		 * should be called from the off state.
+		 */
+		currentBattleState = BattleStates.START;
 	}
 
 

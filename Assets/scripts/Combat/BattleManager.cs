@@ -18,8 +18,10 @@
 	}
 
 	public void StartBattle(Actor initiator, Actor target) {
-		battleStateMachine.CurrentBattleState = BattleStateMachine.BattleStates.START;
+
+		battleStateMachine.StartBattle ();
 		Debug.Log (battleStateMachine.CurrentBattleState);
+
 	}
 
 	public void ChooseStateCallBack() {
@@ -43,19 +45,18 @@
 		Debug.Log("initializing Battle Code.  Should only be called once!");
 	
 		battleCalculator = new BattleCalculator ();
-		battleStateMachine.CurrentBattleState = BattleStateMachine.BattleStates.PLAYERTURN;
+		battleStateMachine.goNextState ();
 	}
 	public void enemyTurn() {
 		battleCalculator.applyDamage (PlayerInformation.PlayerActor, new CombatAbilityBasic());
-		battleStateMachine.CurrentBattleState = BattleStateMachine.BattleStates.PLAYERTURN;
+		battleStateMachine.goNextState ();
 	}
-	bool 
 	public void OnGUI() {
 		if(battleStateMachine.CurrentBattleState != BattleStateMachine.BattleStates.OFF && battleStateMachine.CurrentBattleState != BattleStateMachine.BattleStates.END) {
 			foreach(var ability in PlayerInformation.PlayerActor.CombatMoveSet.Values) {
 				if( GUILayout.Button (ability.Name)) {
 					battleCalculator.applyDamage (Enemy, ability);
-					battleStateMachine.CurrentBattleState = BattleStateMachine.BattleStates.ENEMYTURN;
+					battleStateMachine.goNextState ();
 				}
 			}
 			GUILayout.Label ("Player Health: " + PlayerInformation.PlayerActor.Health);
