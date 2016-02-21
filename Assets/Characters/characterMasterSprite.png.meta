@@ -1,0 +1,3673 @@
+fileFormatVersion: 2
+guid: c2bdafd54c9b4cd459426da5fe82498a
+timeCreated: 1456086248
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: characterMasterSprite_0
+    21300002: characterMasterSprite_1
+    21300004: characterMasterSprite_2
+    21300006: characterMasterSprite_3
+    21300008: characterMasterSprite_4
+    21300010: characterMasterSprite_5
+    21300012: characterMasterSprite_6
+    21300014: characterMasterSprite_7
+    21300016: characterMasterSprite_8
+    21300018: characterMasterSprite_9
+    21300020: characterMasterSprite_10
+    21300022: characterMasterSprite_11
+    21300024: characterMasterSprite_12
+    21300026: characterMasterSprite_13
+    21300028: characterMasterSprite_14
+    21300030: characterMasterSprite_15
+    21300032: characterMasterSprite_16
+    21300034: characterMasterSprite_17
+    21300036: characterMasterSprite_18
+    21300038: characterMasterSprite_19
+    21300040: characterMasterSprite_20
+    21300042: characterMasterSprite_21
+    21300044: characterMasterSprite_22
+    21300046: characterMasterSprite_23
+    21300048: characterMasterSprite_24
+    21300050: characterMasterSprite_25
+    21300052: characterMasterSprite_26
+    21300054: characterMasterSprite_27
+    21300056: characterMasterSprite_28
+    21300058: characterMasterSprite_29
+    21300060: characterMasterSprite_30
+    21300062: characterMasterSprite_31
+    21300064: characterMasterSprite_32
+    21300066: characterMasterSprite_33
+    21300068: characterMasterSprite_34
+    21300070: characterMasterSprite_35
+    21300072: characterMasterSprite_36
+    21300074: characterMasterSprite_37
+    21300076: characterMasterSprite_38
+    21300078: characterMasterSprite_39
+    21300080: characterMasterSprite_40
+    21300082: characterMasterSprite_41
+    21300084: characterMasterSprite_42
+    21300086: characterMasterSprite_43
+    21300088: characterMasterSprite_44
+    21300090: characterMasterSprite_45
+    21300092: characterMasterSprite_46
+    21300094: characterMasterSprite_47
+    21300096: characterMasterSprite_48
+    21300098: characterMasterSprite_49
+    21300100: characterMasterSprite_50
+    21300102: characterMasterSprite_51
+    21300104: characterMasterSprite_52
+    21300106: characterMasterSprite_53
+    21300108: characterMasterSprite_54
+    21300110: characterMasterSprite_55
+    21300112: characterMasterSprite_56
+    21300114: characterMasterSprite_57
+    21300116: characterMasterSprite_58
+    21300118: characterMasterSprite_59
+    21300120: characterMasterSprite_60
+    21300122: characterMasterSprite_61
+    21300124: characterMasterSprite_62
+    21300126: characterMasterSprite_63
+    21300128: characterMasterSprite_64
+    21300130: characterMasterSprite_65
+    21300132: characterMasterSprite_66
+    21300134: characterMasterSprite_67
+    21300136: characterMasterSprite_68
+    21300138: characterMasterSprite_69
+    21300140: characterMasterSprite_70
+    21300142: characterMasterSprite_71
+    21300144: characterMasterSprite_72
+    21300146: characterMasterSprite_73
+    21300148: characterMasterSprite_74
+    21300150: characterMasterSprite_75
+    21300152: characterMasterSprite_76
+    21300154: characterMasterSprite_77
+    21300156: characterMasterSprite_78
+    21300158: characterMasterSprite_79
+    21300160: characterMasterSprite_80
+    21300162: characterMasterSprite_81
+    21300164: characterMasterSprite_82
+    21300166: characterMasterSprite_83
+    21300168: characterMasterSprite_84
+    21300170: characterMasterSprite_85
+    21300172: characterMasterSprite_86
+    21300174: characterMasterSprite_87
+    21300176: characterMasterSprite_88
+    21300178: characterMasterSprite_89
+    21300180: characterMasterSprite_90
+    21300182: characterMasterSprite_91
+    21300184: characterMasterSprite_92
+    21300186: characterMasterSprite_93
+    21300188: characterMasterSprite_94
+    21300190: characterMasterSprite_95
+    21300192: characterMasterSprite_96
+    21300194: characterMasterSprite_97
+    21300196: characterMasterSprite_98
+    21300198: characterMasterSprite_99
+    21300200: characterMasterSprite_100
+    21300202: characterMasterSprite_101
+    21300204: characterMasterSprite_102
+    21300206: characterMasterSprite_103
+    21300208: characterMasterSprite_104
+    21300210: characterMasterSprite_105
+    21300212: characterMasterSprite_106
+    21300214: characterMasterSprite_107
+    21300216: characterMasterSprite_108
+    21300218: characterMasterSprite_109
+    21300220: characterMasterSprite_110
+    21300222: characterMasterSprite_111
+    21300224: characterMasterSprite_112
+    21300226: characterMasterSprite_113
+    21300228: characterMasterSprite_114
+    21300230: characterMasterSprite_115
+    21300232: characterMasterSprite_116
+    21300234: characterMasterSprite_117
+    21300236: characterMasterSprite_118
+    21300238: characterMasterSprite_119
+    21300240: characterMasterSprite_120
+    21300242: characterMasterSprite_121
+    21300244: characterMasterSprite_122
+    21300246: characterMasterSprite_123
+    21300248: characterMasterSprite_124
+    21300250: characterMasterSprite_125
+    21300252: characterMasterSprite_126
+    21300254: characterMasterSprite_127
+    21300256: characterMasterSprite_128
+    21300258: characterMasterSprite_129
+    21300260: characterMasterSprite_130
+    21300262: characterMasterSprite_131
+    21300264: characterMasterSprite_132
+    21300266: characterMasterSprite_133
+    21300268: characterMasterSprite_134
+    21300270: characterMasterSprite_135
+    21300272: characterMasterSprite_136
+    21300274: characterMasterSprite_137
+    21300276: characterMasterSprite_138
+    21300278: characterMasterSprite_139
+    21300280: characterMasterSprite_140
+    21300282: characterMasterSprite_141
+    21300284: characterMasterSprite_142
+    21300286: characterMasterSprite_143
+    21300288: characterMasterSprite_144
+    21300290: characterMasterSprite_145
+    21300292: characterMasterSprite_146
+    21300294: characterMasterSprite_147
+    21300296: characterMasterSprite_148
+    21300298: characterMasterSprite_149
+    21300300: characterMasterSprite_150
+    21300302: characterMasterSprite_151
+    21300304: characterMasterSprite_152
+    21300306: characterMasterSprite_153
+    21300308: characterMasterSprite_154
+    21300310: characterMasterSprite_155
+    21300312: characterMasterSprite_156
+    21300314: characterMasterSprite_157
+    21300316: characterMasterSprite_158
+    21300318: characterMasterSprite_159
+    21300320: characterMasterSprite_160
+    21300322: characterMasterSprite_161
+    21300324: characterMasterSprite_162
+    21300326: characterMasterSprite_163
+    21300328: characterMasterSprite_164
+    21300330: characterMasterSprite_165
+    21300332: characterMasterSprite_166
+    21300334: characterMasterSprite_167
+    21300336: characterMasterSprite_168
+    21300338: characterMasterSprite_169
+    21300340: characterMasterSprite_170
+    21300342: characterMasterSprite_171
+    21300344: characterMasterSprite_172
+    21300346: characterMasterSprite_173
+    21300348: characterMasterSprite_174
+    21300350: characterMasterSprite_175
+    21300352: characterMasterSprite_176
+    21300354: characterMasterSprite_177
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: characterMasterSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 20}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 12}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -14, y: 17}
+        - {x: -16, y: 8}
+        - {x: -16, y: -26}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -30}
+        - {x: 16, y: 15}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -16, y: 15}
+        - {x: -16, y: -31}
+        - {x: -13, y: -32}
+        - {x: 15, y: -32}
+        - {x: 16, y: -29}
+        - {x: 16, y: 14}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 20}
+        - {x: -12, y: 20}
+        - {x: -20, y: 13}
+        - {x: -20, y: -20}
+        - {x: -19, y: -32}
+        - {x: 20, y: -32}
+        - {x: 20, y: 7}
+        - {x: 19, y: 15}
+    - name: characterMasterSprite_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 4}
+        - {x: 13, y: 14}
+        - {x: 8, y: 20}
+        - {x: -10, y: 20}
+        - {x: -27, y: 12}
+        - {x: -27, y: -25}
+        - {x: -15, y: -32}
+        - {x: 25, y: -32}
+        - {x: 27, y: -27}
+        - {x: 27, y: 4}
+        - {x: 25, y: 5}
+    - name: characterMasterSprite_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: -9}
+        - {x: -18, y: -31}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 26, y: -11}
+        - {x: 26, y: 20}
+        - {x: -20, y: 20}
+        - {x: -26, y: 19}
+    - name: characterMasterSprite_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 20}
+        - {x: -20, y: 0}
+        - {x: -20, y: -21}
+        - {x: -18, y: -31}
+        - {x: -12, y: -32}
+        - {x: 13, y: -32}
+        - {x: 20, y: -23}
+        - {x: 20, y: 5}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 14}
+        - {x: -13, y: -30}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 14, y: -25}
+        - {x: 14, y: 12}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 12}
+        - {x: -13, y: -30}
+        - {x: -11, y: -32}
+        - {x: 11, y: -32}
+        - {x: 14, y: -27}
+        - {x: 14, y: 11}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 12}
+        - {x: -13, y: -12}
+        - {x: -12, y: -29}
+        - {x: -8, y: -32}
+        - {x: 9, y: -32}
+        - {x: 13, y: -31}
+        - {x: 14, y: -20}
+        - {x: 14, y: 14}
+        - {x: 6, y: 20}
+    - name: characterMasterSprite_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -14, y: -30}
+        - {x: -5, y: -32}
+        - {x: 9, y: -32}
+        - {x: 16, y: -13}
+        - {x: 16, y: 15}
+        - {x: 6, y: 20}
+    - name: characterMasterSprite_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -17}
+        - {x: -11, y: -28}
+        - {x: -9, y: -30}
+        - {x: -5, y: -32}
+        - {x: 13, y: -32}
+        - {x: 21, y: -23}
+        - {x: 21, y: 10}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -16, y: 18}
+        - {x: -16, y: -32}
+        - {x: 12, y: -32}
+        - {x: 21, y: -15}
+        - {x: 21, y: 15}
+        - {x: 6, y: 20}
+    - name: characterMasterSprite_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -14, y: 14}
+        - {x: -14, y: -30}
+        - {x: -4, y: -32}
+        - {x: 9, y: -32}
+        - {x: 18, y: -23}
+        - {x: 18, y: 11}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 9}
+        - {x: 13, y: 21}
+    - name: characterMasterSprite_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 21}
+        - {x: -17, y: 21}
+        - {x: -17, y: -32}
+        - {x: 15, y: -32}
+        - {x: 17, y: -24}
+        - {x: 17, y: 14}
+    - name: characterMasterSprite_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 19}
+        - {x: 4, y: 21}
+        - {x: -2, y: 21}
+        - {x: -8, y: 20}
+        - {x: -16, y: 13}
+        - {x: -16, y: -30}
+        - {x: -14, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -24}
+        - {x: 16, y: 9}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 21}
+        - {x: -20, y: 6}
+        - {x: -20, y: -25}
+        - {x: -18, y: -31}
+        - {x: -14, y: -32}
+        - {x: 18, y: -32}
+        - {x: 20, y: -28}
+        - {x: 20, y: 3}
+        - {x: 10, y: 21}
+    - name: characterMasterSprite_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -27, y: 13}
+        - {x: -27, y: -20}
+        - {x: -14, y: -32}
+        - {x: 18, y: -32}
+        - {x: 27, y: -17}
+        - {x: 27, y: 4}
+        - {x: 9, y: 21}
+    - name: characterMasterSprite_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 21}
+        - {x: -15, y: 21}
+        - {x: -26, y: 11}
+        - {x: -26, y: -15}
+        - {x: -18, y: -32}
+        - {x: 15, y: -32}
+        - {x: 26, y: 1}
+        - {x: 26, y: 10}
+        - {x: 23, y: 17}
+    - name: characterMasterSprite_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 21}
+        - {x: -12, y: 21}
+        - {x: -19, y: 16}
+        - {x: -19, y: -26}
+        - {x: -18, y: -32}
+        - {x: 16, y: -32}
+        - {x: 19, y: -28}
+        - {x: 19, y: 5}
+    - name: characterMasterSprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -9, y: 20}
+        - {x: -14, y: 10}
+        - {x: -14, y: -20}
+        - {x: -8, y: -32}
+        - {x: 5, y: -32}
+        - {x: 13, y: -29}
+        - {x: 13, y: 15}
+    - name: characterMasterSprite_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -14, y: 17}
+        - {x: -14, y: -26}
+        - {x: -13, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 18}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -14, y: 17}
+        - {x: -14, y: -18}
+        - {x: -10, y: -28}
+        - {x: -7, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 17}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -16, y: 17}
+        - {x: -16, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 18}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -21, y: 3}
+        - {x: -21, y: -20}
+        - {x: -15, y: -31}
+        - {x: -10, y: -32}
+        - {x: 10, y: -32}
+        - {x: 16, y: -24}
+        - {x: 16, y: 12}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -21, y: 12}
+        - {x: -21, y: -5}
+        - {x: -11, y: -29}
+        - {x: -7, y: -32}
+        - {x: 13, y: -32}
+        - {x: 16, y: -22}
+        - {x: 16, y: 10}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -15, y: 13}
+        - {x: -18, y: -6}
+        - {x: -18, y: -13}
+        - {x: -10, y: -28}
+        - {x: -7, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 19}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -17, y: 14}
+        - {x: -17, y: -21}
+        - {x: -15, y: -30}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 17, y: -23}
+        - {x: 17, y: 14}
+        - {x: 7, y: 20}
+    - name: characterMasterSprite_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -30}
+        - {x: 16, y: 6}
+        - {x: 12, y: 19}
+        - {x: -13, y: 19}
+        - {x: -15, y: 14}
+    - name: characterMasterSprite_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -12, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -16}
+        - {x: -10, y: -32}
+        - {x: 14, y: -32}
+        - {x: 15, y: -28}
+        - {x: 15, y: 19}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 20}
+        - {x: -4, y: 20}
+        - {x: -7, y: 19}
+        - {x: -14, y: 9}
+        - {x: -14, y: -16}
+        - {x: -8, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 14}
+        - {x: 9, y: 19}
+    - name: characterMasterSprite_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 19}
+        - {x: -13, y: 11}
+        - {x: -13, y: -12}
+        - {x: -11, y: -25}
+        - {x: -4, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -7}
+        - {x: 16, y: 13}
+        - {x: 12, y: 19}
+    - name: characterMasterSprite_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 19}
+        - {x: -13, y: 16}
+        - {x: -13, y: -20}
+        - {x: -8, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -20}
+        - {x: 16, y: 10}
+        - {x: 13, y: 19}
+    - name: characterMasterSprite_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 19}
+        - {x: -13, y: 11}
+        - {x: -13, y: -12}
+        - {x: -11, y: -25}
+        - {x: -4, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -7}
+        - {x: 16, y: 13}
+        - {x: 12, y: 19}
+    - name: characterMasterSprite_35
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 20}
+        - {x: -4, y: 20}
+        - {x: -7, y: 19}
+        - {x: -14, y: 9}
+        - {x: -14, y: -27}
+        - {x: -6, y: -32}
+        - {x: 13, y: -32}
+        - {x: 15, y: -21}
+        - {x: 15, y: 16}
+        - {x: 9, y: 19}
+    - name: characterMasterSprite_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 14}
+        - {x: -13, y: -30}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 14, y: -25}
+        - {x: 14, y: 12}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -15, y: 17}
+        - {x: -15, y: -32}
+        - {x: 13, y: -32}
+        - {x: 14, y: -26}
+        - {x: 14, y: 19}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -15, y: 16}
+        - {x: -15, y: -26}
+        - {x: -10, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 17}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 12}
+        - {x: -13, y: -31}
+        - {x: -10, y: -32}
+        - {x: 14, y: -32}
+        - {x: 17, y: -28}
+        - {x: 17, y: 9}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -19}
+        - {x: -16, y: -32}
+        - {x: 9, y: -32}
+        - {x: 12, y: -31}
+        - {x: 12, y: 13}
+        - {x: 7, y: 20}
+        - {x: -16, y: 20}
+        - {x: -19, y: 19}
+    - name: characterMasterSprite_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 20}
+        - {x: -13, y: 20}
+        - {x: -22, y: 0}
+        - {x: -22, y: -24}
+        - {x: -15, y: -32}
+        - {x: 12, y: -32}
+        - {x: 12, y: 13}
+    - name: characterMasterSprite_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -19}
+        - {x: -16, y: -32}
+        - {x: 9, y: -32}
+        - {x: 12, y: -31}
+        - {x: 12, y: 13}
+        - {x: 7, y: 20}
+        - {x: -16, y: 20}
+        - {x: -19, y: 19}
+    - name: characterMasterSprite_43
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -12, y: 20}
+        - {x: -13, y: 17}
+        - {x: -13, y: -27}
+        - {x: -10, y: -32}
+        - {x: 13, y: -32}
+        - {x: 15, y: -31}
+        - {x: 17, y: -26}
+        - {x: 17, y: 6}
+    - name: characterMasterSprite_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 9}
+        - {x: 13, y: 21}
+    - name: characterMasterSprite_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 21}
+        - {x: -11, y: 21}
+        - {x: -16, y: 13}
+        - {x: -16, y: -9}
+        - {x: -13, y: -28}
+        - {x: -9, y: -30}
+        - {x: 2, y: -31}
+        - {x: 11, y: -31}
+        - {x: 14, y: -29}
+        - {x: 15, y: -23}
+        - {x: 15, y: 16}
+    - name: characterMasterSprite_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 21}
+        - {x: -11, y: 21}
+        - {x: -16, y: 11}
+        - {x: -16, y: -12}
+        - {x: -11, y: -31}
+        - {x: 11, y: -31}
+        - {x: 13, y: -29}
+        - {x: 15, y: -22}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 21}
+        - {x: -8, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -24}
+        - {x: -15, y: -29}
+        - {x: -10, y: -31}
+        - {x: 9, y: -31}
+        - {x: 14, y: -29}
+        - {x: 15, y: -21}
+        - {x: 15, y: 16}
+        - {x: 6, y: 21}
+    - name: characterMasterSprite_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -9, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -11}
+        - {x: -11, y: -30}
+        - {x: -6, y: -31}
+        - {x: 11, y: -31}
+        - {x: 13, y: -29}
+        - {x: 15, y: -11}
+        - {x: 15, y: 14}
+    - name: characterMasterSprite_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -16, y: 11}
+        - {x: -16, y: -30}
+        - {x: -10, y: -31}
+        - {x: 12, y: -31}
+        - {x: 15, y: -20}
+        - {x: 15, y: 11}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -9, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -11}
+        - {x: -11, y: -30}
+        - {x: -6, y: -31}
+        - {x: 11, y: -31}
+        - {x: 13, y: -29}
+        - {x: 15, y: -11}
+        - {x: 15, y: 14}
+    - name: characterMasterSprite_51
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 21}
+        - {x: -8, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -24}
+        - {x: -15, y: -29}
+        - {x: -10, y: -31}
+        - {x: 9, y: -31}
+        - {x: 14, y: -29}
+        - {x: 15, y: -21}
+        - {x: 15, y: 16}
+        - {x: 6, y: 21}
+    - name: characterMasterSprite_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -9, y: 20}
+        - {x: -14, y: 10}
+        - {x: -14, y: -20}
+        - {x: -8, y: -32}
+        - {x: 5, y: -32}
+        - {x: 13, y: -29}
+        - {x: 13, y: 15}
+    - name: characterMasterSprite_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -14, y: 16}
+        - {x: -14, y: -18}
+        - {x: -9, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 18}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -16, y: 6}
+        - {x: -16, y: -23}
+        - {x: -8, y: -32}
+        - {x: 11, y: -32}
+        - {x: 15, y: -22}
+        - {x: 15, y: 6}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -17, y: 15}
+        - {x: -17, y: -17}
+        - {x: -14, y: -26}
+        - {x: -10, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 19}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -12, y: 16}
+        - {x: -12, y: -32}
+        - {x: 19, y: -32}
+        - {x: 19, y: 16}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -11, y: 12}
+        - {x: -12, y: 8}
+        - {x: -12, y: -31}
+        - {x: -10, y: -32}
+        - {x: 10, y: -32}
+        - {x: 22, y: -16}
+        - {x: 22, y: 1}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -12, y: 16}
+        - {x: -12, y: -32}
+        - {x: 19, y: -32}
+        - {x: 19, y: 16}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_59
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 20}
+        - {x: -15, y: 9}
+        - {x: -17, y: 3}
+        - {x: -17, y: -21}
+        - {x: -12, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 16}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 21}
+        - {x: -17, y: 9}
+        - {x: -17, y: -26}
+        - {x: -13, y: -31}
+        - {x: 14, y: -31}
+        - {x: 17, y: -27}
+        - {x: 17, y: 4}
+        - {x: 12, y: 21}
+    - name: characterMasterSprite_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 21}
+        - {x: -17, y: 11}
+        - {x: -17, y: -18}
+        - {x: -12, y: -28}
+        - {x: -10, y: -31}
+        - {x: 14, y: -31}
+        - {x: 17, y: -22}
+        - {x: 17, y: 15}
+        - {x: 7, y: 21}
+    - name: characterMasterSprite_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 13}
+        - {x: 10, y: 21}
+        - {x: -8, y: 21}
+        - {x: -17, y: 16}
+        - {x: -17, y: -21}
+        - {x: -10, y: -31}
+        - {x: 3, y: -32}
+        - {x: 9, y: -32}
+        - {x: 12, y: -28}
+        - {x: 17, y: -14}
+        - {x: 17, y: -7}
+    - name: characterMasterSprite_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -15, y: 18}
+        - {x: -17, y: 5}
+        - {x: -17, y: -24}
+        - {x: -7, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 16}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 21}
+        - {x: -13, y: 21}
+        - {x: -17, y: 18}
+        - {x: -17, y: -27}
+        - {x: -16, y: -32}
+        - {x: 12, y: -32}
+        - {x: 15, y: -30}
+        - {x: 17, y: -19}
+        - {x: 17, y: 19}
+    - name: characterMasterSprite_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 21}
+        - {x: -17, y: 11}
+        - {x: -17, y: -18}
+        - {x: -12, y: -28}
+        - {x: -10, y: -31}
+        - {x: 14, y: -31}
+        - {x: 17, y: -22}
+        - {x: 17, y: 15}
+        - {x: 7, y: 21}
+    - name: characterMasterSprite_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 21}
+        - {x: -17, y: 12}
+        - {x: -17, y: -21}
+        - {x: -10, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 21}
+    - name: characterMasterSprite_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -16, y: 16}
+        - {x: -16, y: -19}
+        - {x: -12, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 20}
+    - name: characterMasterSprite_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 21}
+        - {x: -17, y: 16}
+        - {x: -17, y: -24}
+        - {x: -15, y: -32}
+        - {x: 11, y: -32}
+        - {x: 17, y: -18}
+        - {x: 17, y: 8}
+        - {x: 11, y: 21}
+    - name: characterMasterSprite_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 14}
+        - {x: -13, y: -30}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 14, y: -25}
+        - {x: 14, y: 12}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 19}
+        - {x: -15, y: 15}
+        - {x: -15, y: -31}
+        - {x: -12, y: -32}
+        - {x: 12, y: -32}
+        - {x: 14, y: -27}
+        - {x: 14, y: 12}
+        - {x: 10, y: 19}
+    - name: characterMasterSprite_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 20}
+        - {x: -13, y: 16}
+        - {x: -13, y: -31}
+        - {x: 14, y: -31}
+        - {x: 14, y: 20}
+    - name: characterMasterSprite_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 15}
+        - {x: -13, y: -9}
+        - {x: -9, y: -31}
+        - {x: 9, y: -31}
+        - {x: 12, y: -30}
+        - {x: 15, y: -22}
+        - {x: 15, y: 11}
+        - {x: 7, y: 20}
+    - name: characterMasterSprite_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 16}
+        - {x: -13, y: -30}
+        - {x: -8, y: -32}
+        - {x: 13, y: -32}
+        - {x: 16, y: -26}
+        - {x: 16, y: 12}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19}
+        - {x: -14, y: 11}
+        - {x: -14, y: -32}
+        - {x: 18, y: -32}
+        - {x: 18, y: 18}
+        - {x: 11, y: 19}
+    - name: characterMasterSprite_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -13, y: -32}
+        - {x: 10, y: -32}
+        - {x: 16, y: -30}
+        - {x: 16, y: 17}
+        - {x: 15, y: 20}
+    - name: characterMasterSprite_76
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -13, y: -21}
+        - {x: -10, y: -32}
+        - {x: 8, y: -32}
+        - {x: 15, y: -25}
+        - {x: 15, y: 9}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_77
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 16}
+        - {x: -13, y: -30}
+        - {x: -7, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 15}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 9}
+        - {x: 13, y: 21}
+    - name: characterMasterSprite_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 21}
+        - {x: -16, y: 21}
+        - {x: -17, y: 17}
+        - {x: -17, y: -29}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -31}
+        - {x: 17, y: -18}
+        - {x: 17, y: 12}
+    - name: characterMasterSprite_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 21}
+        - {x: -17, y: -28}
+        - {x: -11, y: -32}
+        - {x: 11, y: -32}
+        - {x: 15, y: -30}
+        - {x: 17, y: -27}
+        - {x: 17, y: 9}
+        - {x: 14, y: 21}
+    - name: characterMasterSprite_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 20}
+        - {x: -8, y: 19}
+        - {x: -16, y: 12}
+        - {x: -16, y: -20}
+        - {x: -14, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 18}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 8}
+        - {x: 10, y: 21}
+        - {x: -10, y: 21}
+        - {x: -17, y: 12}
+        - {x: -17, y: -21}
+        - {x: -11, y: -32}
+        - {x: 12, y: -32}
+        - {x: 15, y: -24}
+        - {x: 17, y: -15}
+    - name: characterMasterSprite_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 12, y: -32}
+        - {x: 17, y: -26}
+        - {x: 17, y: 13}
+        - {x: 10, y: 21}
+    - name: characterMasterSprite_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 21}
+        - {x: -4, y: 21}
+        - {x: -8, y: 20}
+        - {x: -17, y: 13}
+        - {x: -17, y: -26}
+        - {x: -16, y: -31}
+        - {x: -15, y: -32}
+        - {x: 11, y: -32}
+        - {x: 17, y: -21}
+        - {x: 17, y: -1}
+        - {x: 16, y: 13}
+    - name: characterMasterSprite_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -7, y: 20}
+        - {x: -17, y: 14}
+        - {x: -17, y: -29}
+        - {x: -16, y: -32}
+        - {x: 9, y: -32}
+        - {x: 16, y: -26}
+        - {x: 16, y: 12}
+    - name: characterMasterSprite_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 21}
+        - {x: -8, y: 20}
+        - {x: -17, y: 13}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 18}
+        - {x: 7, y: 21}
+    - name: characterMasterSprite_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -9, y: 20}
+        - {x: -14, y: 10}
+        - {x: -14, y: -20}
+        - {x: -8, y: -32}
+        - {x: 5, y: -32}
+        - {x: 13, y: -29}
+        - {x: 13, y: 15}
+    - name: characterMasterSprite_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 19}
+        - {x: -6, y: 19}
+        - {x: -14, y: 15}
+        - {x: -14, y: -30}
+        - {x: -12, y: -32}
+        - {x: 12, y: -32}
+        - {x: 15, y: -30}
+        - {x: 15, y: 1}
+        - {x: 14, y: 11}
+    - name: characterMasterSprite_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -14, y: 17}
+        - {x: -14, y: -29}
+        - {x: -13, y: -31}
+        - {x: 13, y: -31}
+        - {x: 13, y: 17}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -15, y: 17}
+        - {x: -15, y: -31}
+        - {x: 5, y: -31}
+        - {x: 12, y: -29}
+        - {x: 13, y: -4}
+        - {x: 13, y: 12}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -16, y: 11}
+        - {x: -16, y: -28}
+        - {x: -9, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 13}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 19}
+        - {x: -18, y: 6}
+        - {x: -18, y: -28}
+        - {x: -11, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 14}
+        - {x: 9, y: 19}
+    - name: characterMasterSprite_93
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -16, y: 16}
+        - {x: -16, y: -24}
+        - {x: -7, y: -32}
+        - {x: 11, y: -32}
+        - {x: 13, y: -31}
+        - {x: 13, y: 18}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -7, y: 20}
+        - {x: -15, y: 16}
+        - {x: -15, y: -21}
+        - {x: -8, y: -32}
+        - {x: 6, y: -32}
+        - {x: 11, y: -22}
+        - {x: 13, y: 5}
+        - {x: 13, y: 12}
+    - name: characterMasterSprite_95
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -14, y: 18}
+        - {x: -14, y: -27}
+        - {x: -13, y: -32}
+        - {x: 10, y: -32}
+        - {x: 13, y: -17}
+        - {x: 13, y: 17}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 20}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 12}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 19}
+        - {x: -15, y: 17}
+        - {x: -15, y: -24}
+        - {x: -14, y: -28}
+        - {x: -12, y: -32}
+        - {x: 14, y: -32}
+        - {x: 15, y: -31}
+        - {x: 15, y: 12}
+        - {x: 7, y: 19}
+    - name: characterMasterSprite_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 19}
+        - {x: -13, y: 19}
+        - {x: -16, y: 18}
+        - {x: -16, y: -24}
+        - {x: -14, y: -32}
+        - {x: 13, y: -32}
+        - {x: 15, y: -31}
+        - {x: 15, y: -4}
+        - {x: 14, y: 11}
+    - name: characterMasterSprite_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 20}
+        - {x: -5, y: 20}
+        - {x: -13, y: 17}
+        - {x: -15, y: 4}
+        - {x: -15, y: -26}
+        - {x: -13, y: -32}
+        - {x: 13, y: -32}
+        - {x: 16, y: -30}
+        - {x: 16, y: 16}
+    - name: characterMasterSprite_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -16, y: 9}
+        - {x: -16, y: -23}
+        - {x: -14, y: -28}
+        - {x: -12, y: -32}
+        - {x: 15, y: -32}
+        - {x: 24, y: -14}
+        - {x: 24, y: 5}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -16, y: 9}
+        - {x: -16, y: -23}
+        - {x: -14, y: -28}
+        - {x: -12, y: -32}
+        - {x: 17, y: -32}
+        - {x: 27, y: -20}
+        - {x: 27, y: 4}
+        - {x: 18, y: 20}
+    - name: characterMasterSprite_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 20}
+        - {x: -13, y: 14}
+        - {x: -13, y: -30}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 14, y: -25}
+        - {x: 14, y: 12}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 18}
+        - {x: -17, y: 14}
+        - {x: -17, y: -24}
+        - {x: -16, y: -31}
+        - {x: -12, y: -32}
+        - {x: 12, y: -32}
+        - {x: 12, y: 14}
+        - {x: 9, y: 18}
+    - name: characterMasterSprite_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -15, y: 15}
+        - {x: -15, y: -17}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 17}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 20}
+        - {x: -18, y: 20}
+        - {x: -23, y: 8}
+        - {x: -23, y: -21}
+        - {x: -16, y: -31}
+        - {x: -14, y: -32}
+        - {x: 11, y: -32}
+        - {x: 15, y: -18}
+        - {x: 15, y: 6}
+        - {x: 14, y: 15}
+    - name: characterMasterSprite_106
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -26, y: 10}
+        - {x: -26, y: -16}
+        - {x: -18, y: -32}
+        - {x: 11, y: -32}
+        - {x: 14, y: -29}
+        - {x: 14, y: 3}
+        - {x: 6, y: 20}
+    - name: characterMasterSprite_107
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 20}
+        - {x: -23, y: 10}
+        - {x: -23, y: -6}
+        - {x: -15, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 16}
+        - {x: 5, y: 20}
+    - name: characterMasterSprite_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 9}
+        - {x: 13, y: 21}
+    - name: characterMasterSprite_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 21}
+        - {x: -5, y: 21}
+        - {x: -8, y: 20}
+        - {x: -16, y: 12}
+        - {x: -16, y: -13}
+        - {x: -14, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 19}
+        - {x: -11, y: 19}
+        - {x: -17, y: 8}
+        - {x: -17, y: -15}
+        - {x: -16, y: -31}
+        - {x: -13, y: -32}
+        - {x: 9, y: -32}
+        - {x: 15, y: -30}
+        - {x: 15, y: -2}
+        - {x: 14, y: 11}
+    - name: characterMasterSprite_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 20}
+        - {x: -5, y: 20}
+        - {x: -14, y: 15}
+        - {x: -14, y: -30}
+        - {x: -13, y: -32}
+        - {x: 13, y: -32}
+        - {x: 16, y: -29}
+        - {x: 17, y: -16}
+        - {x: 17, y: 12}
+    - name: characterMasterSprite_112
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -14}
+        - {x: 17, y: -17}
+        - {x: 22, y: -19}
+        - {x: 25, y: -14}
+        - {x: 25, y: -3}
+        - {x: 14, y: 21}
+        - {x: -7, y: 21}
+        - {x: -14, y: 9}
+        - {x: -14, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: -18}
+        - {x: 14, y: -17}
+    - name: characterMasterSprite_113
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 21}
+        - {x: -15, y: 14}
+        - {x: -15, y: -32}
+        - {x: 22, y: -32}
+        - {x: 28, y: -20}
+        - {x: 28, y: 5}
+        - {x: 14, y: 21}
+    - name: characterMasterSprite_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 20}
+        - {x: -9, y: 20}
+        - {x: -14, y: 10}
+        - {x: -14, y: -20}
+        - {x: -8, y: -32}
+        - {x: 5, y: -32}
+        - {x: 13, y: -29}
+        - {x: 13, y: 15}
+    - name: characterMasterSprite_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 18}
+        - {x: -12, y: 17}
+        - {x: -12, y: -32}
+        - {x: 11, y: -32}
+        - {x: 17, y: -26}
+        - {x: 17, y: 6}
+        - {x: 14, y: 18}
+    - name: characterMasterSprite_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 20}
+        - {x: -8, y: 20}
+        - {x: -14, y: 16}
+        - {x: -14, y: -32}
+        - {x: 8, y: -32}
+        - {x: 14, y: -29}
+        - {x: 15, y: -14}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_117
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 20}
+        - {x: -7, y: 20}
+        - {x: -15, y: 11}
+        - {x: -15, y: -32}
+        - {x: 17, y: -32}
+        - {x: 23, y: -28}
+        - {x: 23, y: -7}
+        - {x: 18, y: 12}
+    - name: characterMasterSprite_118
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -14, y: -2}
+        - {x: -14, y: -26}
+        - {x: -11, y: -32}
+        - {x: 15, y: -32}
+        - {x: 26, y: -8}
+        - {x: 26, y: 15}
+        - {x: 17, y: 20}
+    - name: characterMasterSprite_119
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 18}
+        - {x: 11, y: 20}
+        - {x: -5, y: 20}
+        - {x: -10, y: 13}
+        - {x: -14, y: -4}
+        - {x: -14, y: -25}
+        - {x: -10, y: -32}
+        - {x: 10, y: -32}
+        - {x: 12, y: -31}
+        - {x: 13, y: -28}
+        - {x: 23, y: -8}
+        - {x: 23, y: 10}
+    - name: characterMasterSprite_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -18, y: 14}
+        - {x: -18, y: -21}
+        - {x: -16, y: -30}
+        - {x: -14, y: -32}
+        - {x: 13, y: -32}
+        - {x: 16, y: -23}
+        - {x: 16, y: 14}
+        - {x: 6, y: 20}
+    - name: characterMasterSprite_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19}
+        - {x: -16, y: 13}
+        - {x: -16, y: -32}
+        - {x: 14, y: -32}
+        - {x: 15, y: -29}
+        - {x: 15, y: 14}
+        - {x: 6, y: 19}
+    - name: characterMasterSprite_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 20}
+        - {x: -8, y: 20}
+        - {x: -15, y: 11}
+        - {x: -15, y: -31}
+        - {x: -12, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: -30}
+        - {x: 14, y: -26}
+        - {x: 14, y: 16}
+    - name: characterMasterSprite_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -13, y: 15}
+        - {x: -16, y: 11}
+        - {x: -16, y: -1}
+        - {x: -10, y: -23}
+        - {x: -6, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 11}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -6}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 17, y: -23}
+        - {x: 17, y: 1}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_125
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 15}
+        - {x: 7, y: 20}
+        - {x: -7, y: 20}
+        - {x: -15, y: 17}
+        - {x: -16, y: 15}
+        - {x: -16, y: -6}
+        - {x: -7, y: -32}
+        - {x: 9, y: -32}
+        - {x: 11, y: -31}
+        - {x: 15, y: -9}
+        - {x: 15, y: 0}
+    - name: characterMasterSprite_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -16, y: 13}
+        - {x: -16, y: -7}
+        - {x: -8, y: -32}
+        - {x: 10, y: -32}
+        - {x: 16, y: -23}
+        - {x: 16, y: 12}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 20}
+        - {x: -11, y: 20}
+        - {x: -16, y: 16}
+        - {x: -16, y: -11}
+        - {x: -7, y: -32}
+        - {x: 9, y: -32}
+        - {x: 11, y: -31}
+        - {x: 17, y: -20}
+        - {x: 17, y: 9}
+    - name: characterMasterSprite_128
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 20}
+        - {x: -14, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -2}
+        - {x: -10, y: -23}
+        - {x: -6, y: -32}
+        - {x: 11, y: -32}
+        - {x: 18, y: -23}
+        - {x: 18, y: 9}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_129
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -16, y: 12}
+        - {x: -16, y: -1}
+        - {x: -10, y: -23}
+        - {x: -5, y: -31}
+        - {x: -4, y: -32}
+        - {x: 12, y: -32}
+        - {x: 17, y: -25}
+        - {x: 17, y: 1}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_130
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -13, y: 15}
+        - {x: -16, y: 11}
+        - {x: -16, y: -1}
+        - {x: -10, y: -23}
+        - {x: -6, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 11}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_131
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -16, y: 19}
+        - {x: -16, y: -1}
+        - {x: -10, y: -23}
+        - {x: -5, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 16}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_132
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -13, y: 15}
+        - {x: -16, y: 11}
+        - {x: -16, y: -1}
+        - {x: -10, y: -23}
+        - {x: -6, y: -32}
+        - {x: 13, y: -32}
+        - {x: 13, y: 11}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -12, y: 14}
+        - {x: -12, y: -30}
+        - {x: -6, y: -32}
+        - {x: 11, y: -32}
+        - {x: 15, y: -25}
+        - {x: 15, y: 12}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -14, y: 16}
+        - {x: -14, y: -26}
+        - {x: -13, y: -30}
+        - {x: -8, y: -32}
+        - {x: 12, y: -32}
+        - {x: 15, y: -21}
+        - {x: 15, y: 19}
+        - {x: 14, y: 20}
+    - name: characterMasterSprite_135
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -19, y: 10}
+        - {x: -19, y: -21}
+        - {x: -9, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 18}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_136
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -21, y: 1}
+        - {x: -21, y: -23}
+        - {x: -13, y: -32}
+        - {x: 18, y: -32}
+        - {x: 18, y: 6}
+        - {x: 11, y: 20}
+    - name: characterMasterSprite_137
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -17, y: 14}
+        - {x: -21, y: 9}
+        - {x: -21, y: -20}
+        - {x: -15, y: -32}
+        - {x: 12, y: -32}
+        - {x: 18, y: -18}
+        - {x: 18, y: 10}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -22, y: 11}
+        - {x: -22, y: -11}
+        - {x: -12, y: -29}
+        - {x: -3, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 15}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_139
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -20, y: 8}
+        - {x: -22, y: 3}
+        - {x: -22, y: -8}
+        - {x: -12, y: -29}
+        - {x: -8, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -31}
+        - {x: 16, y: 14}
+        - {x: 7, y: 20}
+    - name: characterMasterSprite_140
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -21, y: 8}
+        - {x: -21, y: -10}
+        - {x: -13, y: -30}
+        - {x: -8, y: -32}
+        - {x: 16, y: -32}
+        - {x: 19, y: -25}
+        - {x: 19, y: 10}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_141
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -21, y: 7}
+        - {x: -21, y: -10}
+        - {x: -13, y: -29}
+        - {x: -5, y: -32}
+        - {x: 12, y: -32}
+        - {x: 21, y: -21}
+        - {x: 21, y: 10}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_142
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -17, y: 14}
+        - {x: -21, y: 9}
+        - {x: -21, y: -20}
+        - {x: -15, y: -32}
+        - {x: 12, y: -32}
+        - {x: 18, y: -18}
+        - {x: 18, y: 10}
+        - {x: 13, y: 20}
+    - name: characterMasterSprite_143
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -6, y: 20}
+        - {x: -21, y: 3}
+        - {x: -21, y: -7}
+        - {x: -9, y: -31}
+        - {x: -7, y: -32}
+        - {x: 14, y: -32}
+        - {x: 17, y: -25}
+        - {x: 17, y: 6}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_144
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -6, y: 20}
+        - {x: -21, y: 8}
+        - {x: -21, y: -20}
+        - {x: -15, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_145
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -6, y: 20}
+        - {x: -21, y: 3}
+        - {x: -21, y: -7}
+        - {x: -9, y: -31}
+        - {x: -7, y: -32}
+        - {x: 14, y: -32}
+        - {x: 17, y: -25}
+        - {x: 17, y: 6}
+        - {x: 15, y: 13}
+    - name: characterMasterSprite_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 21}
+        - {x: -18, y: 14}
+        - {x: -18, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 9}
+        - {x: 12, y: 21}
+    - name: characterMasterSprite_147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -31}
+        - {x: 14, y: -31}
+        - {x: 14, y: 17}
+        - {x: 12, y: 21}
+        - {x: -13, y: 21}
+        - {x: -17, y: 17}
+        - {x: -17, y: -30}
+    - name: characterMasterSprite_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 19}
+        - {x: 3, y: 21}
+        - {x: -3, y: 21}
+        - {x: -9, y: 20}
+        - {x: -17, y: 12}
+        - {x: -17, y: -25}
+        - {x: -11, y: -31}
+        - {x: 8, y: -31}
+        - {x: 14, y: -13}
+        - {x: 14, y: 13}
+    - name: characterMasterSprite_149
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 21}
+        - {x: -17, y: 16}
+        - {x: -17, y: -19}
+        - {x: -15, y: -29}
+        - {x: -7, y: -32}
+        - {x: 10, y: -32}
+        - {x: 14, y: -21}
+        - {x: 14, y: 13}
+        - {x: 9, y: 21}
+    - name: characterMasterSprite_150
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 21}
+        - {x: -11, y: 21}
+        - {x: -17, y: 10}
+        - {x: -17, y: -2}
+        - {x: -15, y: -29}
+        - {x: -6, y: -32}
+        - {x: 8, y: -32}
+        - {x: 14, y: -8}
+        - {x: 14, y: 13}
+    - name: characterMasterSprite_151
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 21}
+        - {x: -17, y: -27}
+        - {x: -13, y: -32}
+        - {x: 8, y: -32}
+        - {x: 14, y: -15}
+        - {x: 14, y: 17}
+        - {x: 5, y: 21}
+    - name: characterMasterSprite_152
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 21}
+        - {x: -9, y: 20}
+        - {x: -17, y: 16}
+        - {x: -17, y: -17}
+        - {x: -11, y: -32}
+        - {x: 8, y: -32}
+        - {x: 14, y: -15}
+        - {x: 14, y: 14}
+        - {x: 4, y: 21}
+    - name: characterMasterSprite_153
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 20}
+        - {x: 3, y: 21}
+        - {x: -6, y: 21}
+        - {x: -17, y: 13}
+        - {x: -17, y: -7}
+        - {x: -12, y: -27}
+        - {x: -5, y: -32}
+        - {x: 8, y: -32}
+        - {x: 14, y: -15}
+        - {x: 14, y: 13}
+    - name: characterMasterSprite_154
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 13}
+        - {x: -17, y: -16}
+        - {x: -10, y: -32}
+        - {x: 10, y: -32}
+        - {x: 11, y: -31}
+        - {x: 14, y: -10}
+        - {x: 14, y: 16}
+        - {x: 6, y: 21}
+    - name: characterMasterSprite_155
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 21}
+        - {x: -9, y: 20}
+        - {x: -17, y: 13}
+        - {x: -17, y: -14}
+        - {x: -14, y: -28}
+        - {x: -9, y: -32}
+        - {x: 5, y: -32}
+        - {x: 10, y: -30}
+        - {x: 14, y: -8}
+        - {x: 14, y: 14}
+        - {x: 4, y: 21}
+    - name: characterMasterSprite_156
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 21}
+        - {x: -17, y: 16}
+        - {x: -17, y: -16}
+        - {x: -12, y: -27}
+        - {x: -7, y: -32}
+        - {x: 12, y: -32}
+        - {x: 14, y: -15}
+        - {x: 14, y: 17}
+        - {x: 10, y: 21}
+    - name: characterMasterSprite_157
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 21}
+        - {x: -9, y: 20}
+        - {x: -17, y: 12}
+        - {x: -17, y: -3}
+        - {x: -12, y: -27}
+        - {x: -8, y: -32}
+        - {x: 5, y: -32}
+        - {x: 10, y: -30}
+        - {x: 14, y: -8}
+        - {x: 14, y: 14}
+        - {x: 4, y: 21}
+    - name: characterMasterSprite_158
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 21}
+        - {x: -17, y: 13}
+        - {x: -17, y: -20}
+        - {x: -8, y: -32}
+        - {x: 9, y: -32}
+        - {x: 11, y: -31}
+        - {x: 14, y: -8}
+        - {x: 14, y: 16}
+        - {x: 8, y: 21}
+    - name: characterMasterSprite_159
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 20}
+        - {x: -10, y: 20}
+        - {x: -15, y: 10}
+        - {x: -15, y: -20}
+        - {x: -9, y: -32}
+        - {x: 4, y: -32}
+        - {x: 12, y: -29}
+        - {x: 12, y: 15}
+    - name: characterMasterSprite_160
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 20}
+        - {x: -15, y: -26}
+        - {x: -10, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 20}
+    - name: characterMasterSprite_161
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 20}
+        - {x: -17, y: 19}
+        - {x: -17, y: -32}
+        - {x: 10, y: -32}
+        - {x: 19, y: -17}
+        - {x: 19, y: 1}
+        - {x: 10, y: 20}
+    - name: characterMasterSprite_162
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -18, y: 3}
+        - {x: -18, y: -24}
+        - {x: -15, y: -31}
+        - {x: -14, y: -32}
+        - {x: 11, y: -32}
+        - {x: 21, y: -24}
+        - {x: 21, y: 2}
+        - {x: 9, y: 20}
+    - name: characterMasterSprite_163
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -18, y: 5}
+        - {x: -18, y: -21}
+        - {x: -13, y: -32}
+        - {x: 10, y: -32}
+        - {x: 21, y: -8}
+        - {x: 21, y: 3}
+        - {x: 5, y: 20}
+    - name: characterMasterSprite_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 4}
+        - {x: 6, y: 19}
+        - {x: 5, y: 20}
+        - {x: -8, y: 20}
+        - {x: -15, y: 12}
+        - {x: -15, y: -25}
+        - {x: -12, y: -32}
+        - {x: 9, y: -32}
+        - {x: 11, y: -24}
+        - {x: 21, y: -9}
+        - {x: 22, y: -5}
+    - name: characterMasterSprite_165
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 6}
+        - {x: 17, y: 13}
+        - {x: 6, y: 20}
+        - {x: -13, y: 20}
+        - {x: -16, y: 14}
+        - {x: -16, y: -21}
+        - {x: -13, y: -32}
+        - {x: 13, y: -32}
+        - {x: 22, y: -7}
+        - {x: 22, y: 2}
+    - name: characterMasterSprite_166
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 20}
+        - {x: -19, y: 13}
+        - {x: -19, y: -14}
+        - {x: -14, y: -30}
+        - {x: -11, y: -32}
+        - {x: 13, y: -32}
+        - {x: 21, y: -11}
+        - {x: 21, y: 14}
+        - {x: 8, y: 20}
+    - name: characterMasterSprite_167
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -21, y: 10}
+        - {x: -21, y: -19}
+        - {x: -15, y: -32}
+        - {x: 13, y: -32}
+        - {x: 21, y: -14}
+        - {x: 21, y: -1}
+        - {x: 8, y: 20}
+    - name: characterMasterSprite_168
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 20}
+        - {x: -18, y: 5}
+        - {x: -18, y: -21}
+        - {x: -13, y: -32}
+        - {x: 10, y: -32}
+        - {x: 21, y: -8}
+        - {x: 21, y: 3}
+        - {x: 5, y: 20}
+    - name: characterMasterSprite_169
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -13, y: 20}
+        - {x: -17, y: 6}
+        - {x: -17, y: -24}
+        - {x: -13, y: -32}
+        - {x: 6, y: -32}
+        - {x: 9, y: -31}
+        - {x: 14, y: -24}
+        - {x: 21, y: -7}
+        - {x: 21, y: 3}
+    - name: characterMasterSprite_170
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 21}
+        - {x: -15, y: -25}
+        - {x: -12, y: -32}
+        - {x: 7, y: -32}
+        - {x: 21, y: -31}
+        - {x: 21, y: 21}
+    - name: characterMasterSprite_171
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20}
+        - {x: -13, y: 20}
+        - {x: -17, y: 6}
+        - {x: -17, y: -24}
+        - {x: -13, y: -32}
+        - {x: 6, y: -32}
+        - {x: 9, y: -31}
+        - {x: 14, y: -24}
+        - {x: 21, y: -7}
+        - {x: 21, y: 3}
+    - name: characterMasterSprite_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 9}
+        - {x: 13, y: 21}
+    - name: characterMasterSprite_173
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 20}
+        - {x: -6, y: 19}
+        - {x: -16, y: 14}
+        - {x: -16, y: -24}
+        - {x: -14, y: -32}
+        - {x: 16, y: -32}
+        - {x: 19, y: -21}
+        - {x: 19, y: 15}
+        - {x: 12, y: 20}
+    - name: characterMasterSprite_174
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 13}
+        - {x: -3, y: 13}
+        - {x: -11, y: 10}
+        - {x: -15, y: 1}
+        - {x: -15, y: -30}
+        - {x: -14, y: -32}
+        - {x: 11, y: -32}
+        - {x: 19, y: -25}
+        - {x: 19, y: 6}
+    - name: characterMasterSprite_175
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 9}
+        - {x: -4, y: 9}
+        - {x: -12, y: 6}
+        - {x: -15, y: -1}
+        - {x: -15, y: -31}
+        - {x: 13, y: -31}
+        - {x: 19, y: -26}
+        - {x: 19, y: -15}
+        - {x: 18, y: 1}
+    - name: characterMasterSprite_176
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 2}
+        - {x: -15, y: -9}
+        - {x: -15, y: -30}
+        - {x: -14, y: -31}
+        - {x: 17, y: -31}
+        - {x: 20, y: -30}
+        - {x: 20, y: -8}
+        - {x: 10, y: 2}
+    - name: characterMasterSprite_177
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 6}
+        - {x: -16, y: 0}
+        - {x: -16, y: -32}
+        - {x: 22, y: -32}
+        - {x: 22, y: 1}
+        - {x: 18, y: 6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

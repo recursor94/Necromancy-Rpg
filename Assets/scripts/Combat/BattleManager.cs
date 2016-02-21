@@ -3,7 +3,8 @@
 	BattleCalculator battleCalculator;
 	Actor Enemy; //for test purposes only
 	void Awake() {
-		
+
+		GetComponent <BattleManager>().enabled = false;
 	}
 	void Start () {
 		battleStateMachine = new BattleStateMachine ();
@@ -48,7 +49,11 @@
 			PostEnemyTurn ();
 			battleStateMachine.goNextState ();
 			break;
+		case BattleStateMachine.BattleStates.END:
+			
+			break;
 		}
+	
 	}
 
 	public void initBattle() {
