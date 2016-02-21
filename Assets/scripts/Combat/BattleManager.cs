@@ -28,16 +28,26 @@
 		switch(battleStateMachine.CurrentBattleState) {
 		case BattleStateMachine.BattleStates.START:
 			initBattle ();
+			battleStateMachine.goNextState ();
 			break;
 		case BattleStateMachine.BattleStates.PLAYERTURN:
 			//Player goes first by default, may make this more complicated
 			//by determining first turn through role
-			break;
-		case BattleStateMachine.BattleStates.ENEMYTURN:
-			enemyTurn ();
-			break;
-			
 
+			break;
+		case BattleStateMachine.BattleStates.ENDPLAYERTURN:
+			PostPlayerTurn ();
+			battleStateMachine.goNextState (); //may present a problem if the game ends, but will probably be ignored--something to keep in mind.
+			break;
+		
+		case BattleStateMachine.BattleStates.ENEMYTURN:
+			EnemyTurn ();
+			battleStateMachine.goNextState ();
+			break;
+		case BattleStateMachine.BattleStates.ENDENEMYTURN:
+			PostEnemyTurn ();
+			battleStateMachine.goNextState ();
+			break;
 		}
 	}
 
@@ -47,9 +57,44 @@
 		battleCalculator = new BattleCalculator ();
 		battleStateMachine.goNextState ();
 	}
-	public void enemyTurn() {
+	public void EnemyTurn() {
 		battleCalculator.applyDamage (PlayerInformation.PlayerActor, new CombatAbilityBasic());
-		battleStateMachine.goNextState ();
+	}
+
+	public void PostPlayerTurn() {
+		/*
+		 * Handles events that happen after player turn is over
+		 * such as dot effects on player
+		 */
+		PostTurnEffects ();
+	}
+	public void PostEnemyTurn() {
+
+		/*
+		 * Handles events that happen after enemy turn is over
+		 * such as dot effects on enemy
+		 */
+		PostTurnEffects ();
+	}
+
+	public void PostTurnEffects() {
+		/* Defines behavior that occurs
+		 * at the end of each turn, 
+		 * both for an end of the player turn, and the end of the 
+		 * enemy turn.  EG. Checking if there is a winner.
+		 */
+		Actor winner = getWinner ();
+
+		if(winner != null) {
+
+			Debug.Log (winner + " has won!");
+			battleStateMachine.EndBattle ();
+		}
+
+	}
+
+	public Actor getWinner() {
+		return battleCalculator.getWinner (PlayerInformation.PlayerActor, Enemy);
 	}
 	public void OnGUI() {
 		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
