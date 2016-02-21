@@ -8,7 +8,7 @@
 	void Start () {
 		battleStateMachine = new BattleStateMachine ();
 		Enemy = new TESTEnemyActor ();
-		StartBattle (null, null);
+		StartBattle ();
 	}
 	
 	void Update () {
@@ -17,7 +17,7 @@
 		ChooseStateCallBack ();
 	}
 
-	public void StartBattle(Actor initiator, Actor target) {
+	public void StartBattle() {
 
 		battleStateMachine.StartBattle ();
 		Debug.Log (battleStateMachine.CurrentBattleState);
