@@ -24,7 +24,7 @@ public abstract class Actor {
 
 	private int health;
 
-	public Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender ) {
+	public Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;
