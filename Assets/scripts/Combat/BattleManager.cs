@@ -55,7 +55,6 @@
 		Debug.Log("initializing Battle Code.  Should only be called once!");
 	
 		battleCalculator = new BattleCalculator ();
-		battleStateMachine.goNextState ();
 	}
 	public void EnemyTurn() {
 		battleCalculator.applyDamage (PlayerInformation.PlayerActor, new CombatAbilityBasic());

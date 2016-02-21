@@ -13,10 +13,10 @@ public class BattleCalculator {
 
 		if(player.Health <=0) {
 
-			return player;
+			return enemy;
 		}
 		else if(enemy.Health <= 0) {
-			return enemy;
+			return player;
 		}
 		return null;
 
