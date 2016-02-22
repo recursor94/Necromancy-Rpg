@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class ConversationTrigger : MonoBehaviour {
+public class Conversation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,11 +11,5 @@ public abstract class ConversationTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
-
-	void OnTriggerEnter2D(Collider2D otherObject) {
-
-
-
 	}
 }
