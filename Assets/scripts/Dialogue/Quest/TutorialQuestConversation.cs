@@ -24,7 +24,7 @@ public class TutorialQuestConversation : Conversation {
 
 
 		Quest tutorialQuest = new TutorialQuest ();
-		QuestManager.startQuest(tutorialQuest);
+		QuestManager.StartQuest(tutorialQuest);
 		base.onEnd ();
 	}
 

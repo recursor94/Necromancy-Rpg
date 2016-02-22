@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class TutorialQuest : Quest{
 
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
 
 		Debug.Log (PlayerInformation.PlayerActor.Id);
 		Debug.Log("Tutorial Quest Initialized");
@@ -13,7 +13,7 @@ public class TutorialQuest : Quest{
 		questObjectives = new List<QuestObjective> ();
 		conversations = new List<Conversation> ();
 		conversations.Add (new TutorialQuestConversation());
-		base.Start ();
+
 	
 	}
 	

@@ -6,26 +6,35 @@ using System.Collections.Generic;
 public class QuestManager : MonoBehaviour {
 
 	// Use this for initialization
-	public static GameObject QuestController = new GameObject(); //Main controller for quest scripts 
-	private static List<Quest> ActiveQuests;
+	private static List<Quest> ActiveQuests = new List<Quest>();
 	void Start () {
-	
+
+		//FIX LATER: create initial quest, tutorial quest.
+
+
+		StartQuest (new TutorialQuest ());
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		foreach(Quest q in ActiveQuests) {
+	foreach(Quest q in ActiveQuests) {
 
-			q.Update ();
-		}
+			if(q != null) {
+			q.Update (); //Probably terrible idea because now quest code 
+			//will have to execute sequentially--REMEMBER TO CHANGE QUESTS BACK TO 
+			//SCRIPTS LATER
+			}
+		} 
 	
 	}
 
-	public static void startQuest (Quest q) {
+	public static void StartQuest (Quest q) {
 
+		Debug.Log (q);
 		ActiveQuests.Add (q);
 		q.Start ();
+		Debug.Log (q.Conversations);
 		DialogueController.ActiveConversations.AddRange (q.Conversations);
 
 

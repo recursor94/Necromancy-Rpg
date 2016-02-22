@@ -13,15 +13,7 @@ public abstract class Quest  {
 
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
-	public void Start () {
-
-		foreach(Conversation conversation in conversations) {
-			if(conversation != null) {
-
-				DialogueController.AddActiveConversation (conversation);
-			}
-		}
-	}
+	public abstract void Start () ;
 	
 	// Update is called once per frame
 	public abstract void Update ();
@@ -52,7 +44,7 @@ public abstract class Quest  {
 	}
 
 
-	public List<Conversation> Conversations {
+	public  List<Conversation> Conversations {
 		get {
 			return conversations;
 		}
