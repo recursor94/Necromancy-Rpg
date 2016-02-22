@@ -26,7 +26,15 @@ public abstract class Actor {
 	private int health;
 	private string id;
 
-	public Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
+	protected Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
+		this.combatMoveSet = combatMoveSet;
+		this.level = level;
+		this.gender = gender;
+		this.healthCap = healthCap; 
+		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
+		this.id = Guid.NewGuid ().ToString ();
+	}
+	protected Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) {
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;

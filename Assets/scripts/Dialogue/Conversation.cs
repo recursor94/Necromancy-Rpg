@@ -9,8 +9,8 @@ using System.Collections.Generic;
 
 public class Conversation {
 
-	List<string> validNpcIds; //list of npc id's that are elligible for this conversation
-	string dialogueText; //very simple for now--one string representing the whole dialogue
+	private List<string> validNpcIds; //list of npc id's that are elligible for this conversation
+	private string dialogueText; //very simple for now--one string representing the whole dialogue
 
 
 	public Conversation(string dialogueText, List<string> validNpcIds) {
