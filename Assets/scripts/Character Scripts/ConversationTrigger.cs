@@ -18,4 +18,7 @@ public class ConversationTrigger : MonoBehaviour {
 
 
 	}
+	void OnTriggerExit2D(Collider2D otherObject) {
+		DialogueController.UICanvas.SetActive (false);
+	}
 }

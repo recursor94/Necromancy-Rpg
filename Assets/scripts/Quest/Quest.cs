@@ -16,7 +16,10 @@ public abstract class Quest : MonoBehaviour {
 	protected void Start () {
 
 		foreach(Conversation conversation in conversations) {
-			DialogueController.AddActiveConversation (conversation);
+			if(conversation != null) {
+
+				DialogueController.AddActiveConversation (conversation);
+			}
 		}
 	}
 	

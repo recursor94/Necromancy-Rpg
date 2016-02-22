@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour {
 
-	public static List<Conversation> ActiveConversations;
+	public static List<Conversation> ActiveConversations = new List<Conversation>();
 	public static GameObject UICanvas;
 	// Use this for initialization
 	void Awake () {
@@ -13,8 +13,13 @@ public class DialogueController : MonoBehaviour {
 		UICanvas.SetActive (false);
 	}
 	void Start () {
-		ActiveConversations = new List<Conversation> ();
-	
+		Canvas canvas = UICanvas.GetComponent <Canvas> ();
+		Camera camera = GameObject.Find ("Main Camera").GetComponent<Camera> ();
+		//Rect rect = canvas.pixelRect;
+		//rect.width = camera.pixelWidth;
+		
+
+
 	}
 	
 	// Update is called once per frame
