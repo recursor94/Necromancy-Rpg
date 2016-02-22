@@ -21,6 +21,10 @@ public class TutorialQuestConversation : Conversation {
 		 * should initiate 
 		 * quest
 		 */
+
+
+		Quest tutorialQuest = new TutorialQuest ();
+		QuestManager.startQuest(tutorialQuest);
 		base.onEnd ();
 	}
 

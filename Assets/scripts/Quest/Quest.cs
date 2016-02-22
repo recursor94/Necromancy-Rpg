@@ -7,13 +7,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public abstract class Quest : MonoBehaviour {
+public abstract class Quest  {
 
 	// Use this for initialization
 
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
-	protected void Start () {
+	public void Start () {
 
 		foreach(Conversation conversation in conversations) {
 			if(conversation != null) {
@@ -24,9 +24,7 @@ public abstract class Quest : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	public abstract void Update ();
 
 	public bool isComplete() {
 		/*
@@ -51,8 +49,12 @@ public abstract class Quest : MonoBehaviour {
 		 * 
 		 * Can also call instantiate new, subsequent quest
 		 */
-		enabled = false; //disable quest script, so it no longer executes
 	}
 
 
+	public List<Conversation> Conversations {
+		get {
+			return conversations;
+		}
+	}
 }
