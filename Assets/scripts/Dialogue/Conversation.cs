@@ -31,4 +31,8 @@ public class Conversation {
 		validNpcIds.Add (guid);
 	}
 
+	public bool isNpcValid(string guid) {
+		return validNpcIds.Contains (guid);
+	}
+
 }
