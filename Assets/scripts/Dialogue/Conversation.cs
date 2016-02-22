@@ -40,4 +40,11 @@ public class Conversation {
 			return dialogueText;
 		}
 	}
+
+	protected void onEnd() {
+		/*
+		 * represents behavior that 
+		 * occurs after the conversation has ended
+*/
+	}
 }

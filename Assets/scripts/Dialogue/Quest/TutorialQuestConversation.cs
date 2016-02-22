@@ -15,4 +15,13 @@ public class TutorialQuestConversation : Conversation {
 		base.addValidNpcId (TutorialNpc.Id);
 	}
 
+	public void onEnd() {
+
+		/*
+		 * should initiate 
+		 * quest
+		 */
+		base.onEnd ();
+	}
+
 }
