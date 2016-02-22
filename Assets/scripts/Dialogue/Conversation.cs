@@ -1,15 +1,34 @@
-﻿using UnityEngine;
+﻿/*
+ * Defines object that contains state for a conversation
+ * including the text in that conversation
+ * and the characters who are valid initiator's of that conversation
+ */
+using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class Conversation : MonoBehaviour {
+public class Conversation {
 
-	// Use this for initialization
-	void Start () {
-	
+	List<string> validNpcIds; //list of npc id's that are elligible for this conversation
+	string dialogueText; //very simple for now--one string representing the whole dialogue
+
+
+	public Conversation(string dialogueText, List<string> validNpcIds) {
+		this.dialogueText = dialogueText;
+		this.validNpcIds = validNpcIds;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public Conversation(string dialogueText) {
+		this.dialogueText = dialogueText;
+		this.validNpcIds = new List<string> ();
 	}
+
+	public void addValidNpcId(string guid) {
+		/*
+		 * adds the unique id of an npc
+		 * to the list of valid npcs for this conversation
+		 */
+		validNpcIds.Add (guid);
+	}
+
 }

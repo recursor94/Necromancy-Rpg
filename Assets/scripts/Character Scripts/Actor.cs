@@ -5,6 +5,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public abstract class Actor {
 	private Dictionary<string, CombatAbility> combatMoveSet; //represents all of the combat moves actor is capable of. dictionary so it can be added to and removed from
@@ -23,6 +24,7 @@ public abstract class Actor {
 	private int healthCap; //represents maximum health of actor, health can not be set above this value 
 
 	private int health;
+	private string id;
 
 	public Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
 		this.combatMoveSet = combatMoveSet;
@@ -30,6 +32,7 @@ public abstract class Actor {
 		this.gender = gender;
 		this.healthCap = healthCap; 
 		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
+		id = Guid.NewGuid ().ToString ();
 	}
 	public int Health{ get { return health;
 		}}
@@ -38,4 +41,10 @@ public abstract class Actor {
 		health -= magnitude;
 	}
 	public Dictionary<string, CombatAbility> CombatMoveSet {get {return combatMoveSet;}}
+
+	public string Id {
+		get {
+			return id;
+		}
+	}
 }
