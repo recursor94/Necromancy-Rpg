@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour {
 
 	public static List<Conversation> ActiveConversations;
+	public static GameObject UICanvas;
 	// Use this for initialization
+	void Awake () {
+		UICanvas = GameObject.Find ("DialogueCanvas");
+		UICanvas.SetActive (false);
+	}
 	void Start () {
 		ActiveConversations = new List<Conversation> ();
 	

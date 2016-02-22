@@ -13,8 +13,11 @@ public abstract class Quest : MonoBehaviour {
 
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
-	void Start () {
-	
+	protected void Start () {
+
+		foreach(Conversation conversation in conversations) {
+			DialogueController.AddActiveConversation (conversation);
+		}
 	}
 	
 	// Update is called once per frame

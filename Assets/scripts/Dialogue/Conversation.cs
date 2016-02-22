@@ -35,4 +35,9 @@ public class Conversation {
 		return validNpcIds.Contains (guid);
 	}
 
+	public string DialogueText {
+		get {
+			return dialogueText;
+		}
+	}
 }
