@@ -8,9 +8,13 @@ public class QuestObjectiveCondition  {
 
 	private bool isFulfilled;
 
-
 	public QuestObjectiveCondition() {
 		isFulfilled = false;
 	}
 
+	public bool IsFulfilled {
+		get {
+			return isFulfilled;
+		}
+	}
 }

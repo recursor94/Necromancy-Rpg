@@ -11,4 +11,9 @@ public abstract class QuestObjective  {
 	private bool isComplete;
 	private string objectiveText;
 
+	public bool IsComplete {
+		get {
+			return isComplete;
+		}
+	}
 }
