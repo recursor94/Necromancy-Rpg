@@ -11,8 +11,8 @@ public abstract class Quest : MonoBehaviour {
 
 	// Use this for initialization
 
-	private List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
-	private List<Conversation> conversations;
+	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
+	protected List<Conversation> conversations;
 	void Start () {
 	
 	}
