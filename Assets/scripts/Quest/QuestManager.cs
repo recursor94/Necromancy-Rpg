@@ -7,13 +7,13 @@ public class QuestManager : MonoBehaviour {
 
 	// Use this for initialization
 	private static List<Quest> ActiveQuests = new List<Quest>();
-	public static GameObject QuestControllerObject;
+	public static GameObject ControllerObject;
 	void Start () {
 
 		//FIX LATER: create initial quest, tutorial quest.
 
 
-		QuestControllerObject = GameObject.Find ("QuestController");
+		ControllerObject = gameObject;
 		StartQuest (new TutorialQuest ());
 
 
@@ -40,7 +40,10 @@ public class QuestManager : MonoBehaviour {
 		//q.Start ();
 		Debug.Log (q.Conversations);
 		DialogueController.ActiveConversations.AddRange (q.Conversations);
-		gameObject
+		Type questType = q.GetType ();
+
+	//	QuestManager.ControllerObject.AddComponent<typeof(quest);
+
 
 
 
