@@ -13,7 +13,6 @@ public class KillQuest : Quest
 		this.killTarget = killTarget;
 	}
 
-
 }		
 
 

@@ -61,7 +61,7 @@ public abstract class Quest {
 		 */
 	}
 
-	public abstract void onEvent(); //defines behavior when an event is triggered in game such as target npc killed.  responds appropriately
+	protected abstract void onEvent(Event e); //defines behavior when an event is triggered in game such as target npc killed.  responds appropriately
 
 	public  List<Conversation> Conversations {
 		get {
