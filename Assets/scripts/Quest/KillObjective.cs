@@ -7,6 +7,7 @@ using System.Collections;
 */
 public sealed class KillObjective : QuestObjective  {
 
+
 	private string actorTargetId; //string representing in game id of actor to be killed;
 	private int requiredKillCount; //int representing how many of the target actor need to be kiled.
 
@@ -15,7 +16,7 @@ public sealed class KillObjective : QuestObjective  {
 
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = 1; //by default only one will probably exist/need to be killed
-
+		this.ObjectiveText = actorTargetId;
 	}
 
 	public KillObjective(string actorTargetId, int requiredKillCount) {
