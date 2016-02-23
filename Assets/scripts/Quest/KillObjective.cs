@@ -24,4 +24,6 @@ public class KillObjective : QuestObjective  {
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = requiredKillCount;
 	}
+
+	
 }

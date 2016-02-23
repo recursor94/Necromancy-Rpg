@@ -16,4 +16,16 @@ public abstract class QuestObjective  {
 			return isComplete;
 		}
 	}
+
+	public override string ToString ()
+	{
+		if(isComplete) {
+
+			return objectiveText + ": " + "[Complete!]";
+
+		}
+		else {
+			return objectiveText + ": [Incomplete}"
+		}
+	}
 }
