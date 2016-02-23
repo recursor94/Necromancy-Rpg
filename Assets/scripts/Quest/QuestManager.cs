@@ -7,25 +7,29 @@ public class QuestManager : MonoBehaviour {
 
 	// Use this for initialization
 	private static List<Quest> ActiveQuests = new List<Quest>();
+	public static GameObject QuestControllerObject;
 	void Start () {
 
 		//FIX LATER: create initial quest, tutorial quest.
 
 
+		QuestControllerObject = GameObject.Find ("QuestController");
 		StartQuest (new TutorialQuest ());
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-	foreach(Quest q in ActiveQuests) {
-
-			if(q != null) {
-			q.Update (); //Probably terrible idea because now quest code 
-			//will have to execute sequentially--REMEMBER TO CHANGE QUESTS BACK TO 
-			//SCRIPTS LATER
-			}
-		} 
+//	foreach(Quest q in ActiveQuests) {
+//
+//			if(q != null) {
+//			q.Update (); //Probably terrible idea because now quest code 
+//			//will have to execute sequentially--REMEMBER TO CHANGE QUESTS BACK TO 
+//			//SCRIPTS LATER
+//			}
+//		} 
 	
 	}
 
@@ -33,9 +37,11 @@ public class QuestManager : MonoBehaviour {
 
 		Debug.Log (q);
 		ActiveQuests.Add (q);
-		q.Start ();
+		//q.Start ();
 		Debug.Log (q.Conversations);
 		DialogueController.ActiveConversations.AddRange (q.Conversations);
+		gameObject
+
 
 
 	}

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class TutorialQuest : Quest{
 
 	// Use this for initialization
-	public override void Start () {
+	 void Start () {
 
 		Debug.Log (PlayerInformation.PlayerActor.Id);
 		Debug.Log("Tutorial Quest Initialized");
@@ -18,7 +18,7 @@ public class TutorialQuest : Quest{
 	}
 	
 	// Update is called once per frame
-	public override void Update () {
+	void Update () {
 	
 	}
 }

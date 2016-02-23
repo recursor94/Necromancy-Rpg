@@ -7,16 +7,20 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public abstract class Quest  {
+public abstract class Quest : MonoBehaviour {
 
 	// Use this for initialization
 
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
-	public abstract void Start () ;
+	protected void Start () {
+		
+	} 
 	
 	// Update is called once per frame
-	public abstract void Update ();
+	protected void Update () {
+		
+	}
 
 	public bool isComplete() {
 		/*
