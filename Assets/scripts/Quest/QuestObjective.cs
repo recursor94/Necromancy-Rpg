@@ -40,4 +40,15 @@ public abstract class QuestObjective  {
 		}
 
 	}
+
+	protected void complete() {
+		//sets iscomplete to true and calls on complete
+
+		onComplete ();
+	}
+	protected void onComplete() {
+		//Event called on the complete of the objective
+		Debug.Log ("Objective Complete!");
+	}
+
 }

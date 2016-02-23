@@ -10,6 +10,7 @@ public sealed class KillObjective : QuestObjective  {
 
 	private string actorTargetId; //string representing in game id of actor to be killed;
 	private int requiredKillCount; //int representing how many of the target actor need to be kiled.
+	private int killedCount;
 
 
 	public KillObjective(string actorTargetId) {
@@ -26,6 +27,26 @@ public sealed class KillObjective : QuestObjective  {
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = requiredKillCount;
 	}
+
+	private void incrementKillCount() {
+		//increments the tally of the number of targets killed.
+		killedCount++;
+	}
+	public void sendDeathEvent(DeathEvent deathEvent) {
+
+		//respond to target actor's death
+
+		if(deathEvent.KilledTarget.Id.Equals(actorTargetId)) {
+
+			incrementKillCount ();
+			if(killedCount >= requiredKillCount) {
+
+				complete ();
+			}
+		}
+	}
+	
+
 
 	
 }
