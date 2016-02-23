@@ -2,8 +2,9 @@
 
 namespace AssemblyCSharp
 {
-	public class KillQuest
+	public class KillQuest : Quest
 	{
+		
 		public KillQuest ()
 		{
 		}

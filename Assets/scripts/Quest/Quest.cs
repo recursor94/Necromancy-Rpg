@@ -7,12 +7,26 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public abstract class Quest : MonoBehaviour {
+public abstract class Quest {
 
 	// Use this for initialization
 
+	protected Actor participant; //Added participant actor to keep quest code independent of player
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
+
+	protected Quest(Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
+
+		this.participant = particpant;
+		this.questObjectives = questObjectives;
+		this.conversations = conversations;
+	}
+
+	protected Quest(Actor participant) {
+		this.participant = participant;
+		this.questObjectives = new List<QuestObjective> ();
+		this.conversations = new List<Conversation> ();
+	}
 	protected void Start () {
 		
 	} 
