@@ -14,7 +14,7 @@ public class QuestManager : MonoBehaviour {
 
 
 		ControllerObject = gameObject;
-		StartQuest (new TutorialQuest ());
+//		StartQuest (new TutorialQuest ());
 
 
 	}

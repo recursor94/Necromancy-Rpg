@@ -13,6 +13,19 @@ public class KillQuest : Quest
 		this.killTarget = killTarget;
 	}
 
+	protected override void OnEvent (GameEvent gameEvent) {
+
+		if(gameEvent is DeathEvent) {
+			foreach(QuestObjective objective in questObjectives) {
+				
+			}
+		}
+
+	}
+
+
+
+
 }		
 
 

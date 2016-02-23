@@ -15,7 +15,7 @@ public class TutorialQuestConversation : Conversation {
 		base.addValidNpcId (TutorialNpc.Id);
 	}
 
-	public void onEnd() {
+	protected void onEnd() {
 
 		/*
 		 * should initiate 
@@ -23,9 +23,9 @@ public class TutorialQuestConversation : Conversation {
 		 */
 
 
-		Quest tutorialQuest = new TutorialQuest ();
-		QuestManager.StartQuest(tutorialQuest);
-		base.onEnd ();
+//		Quest tutorialQuest = new TutorialQuest ();
+//		QuestManager.StartQuest(tutorialQuest);
+//		base.onEnd ();
 	}
 
 }
