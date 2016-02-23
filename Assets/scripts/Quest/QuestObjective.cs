@@ -25,7 +25,7 @@ public abstract class QuestObjective  {
 
 		}
 		else {
-			return objectiveText + ": [Incomplete}";
+			return objectiveText + ": [Incomplete]";
 		}
 	}
 }
