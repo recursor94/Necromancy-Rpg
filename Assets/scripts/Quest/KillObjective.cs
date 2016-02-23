@@ -5,7 +5,7 @@ using System.Collections;
  * quest objective for tracking whether npc was killed.
  * and a number of npc to kill
 */
-public class KillObjective : QuestObjective  {
+public sealed class KillObjective : QuestObjective  {
 
 	private string actorTargetId; //string representing in game id of actor to be killed;
 	private int requiredKillCount; //int representing how many of the target actor need to be kiled.
@@ -15,6 +15,7 @@ public class KillObjective : QuestObjective  {
 
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = 1; //by default only one will probably exist/need to be killed
+
 	}
 
 	public KillObjective(string actorTargetId, int requiredKillCount) {

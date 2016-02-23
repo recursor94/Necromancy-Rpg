@@ -21,11 +21,23 @@ public abstract class QuestObjective  {
 	{
 		if(isComplete) {
 
-			return objectiveText + ": " + "[Complete!]";
+			return ObjectiveText + ": " + "[Complete!]";
 
 		}
 		else {
-			return objectiveText + ": [Incomplete]";
+			return ObjectiveText + ": [Incomplete]";
 		}
+	}
+
+	protected string ObjectiveText {
+		//in protected method because should not be accessed outside of class
+		//or sub classes but behavior might change
+		get {
+			return objectiveText;
+		}
+		set {
+			objectiveText = value;
+		}
+
 	}
 }
