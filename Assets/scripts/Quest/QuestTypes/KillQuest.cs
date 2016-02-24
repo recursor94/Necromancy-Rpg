@@ -6,11 +6,12 @@
  */
 public class KillQuest : Quest
 {
-	private static Actor Participant;
-	private Actor killTarget;
-	public KillQuest (Actor killTarget) : base (Participant) {
+	private string killTargetId;
+	public static Actor Participant; //must be static so works with base constructor
+	public KillQuest (Actor particpant, string killTargetId) : base (Participant) {
 
-		this.killTarget = killTarget;
+		Participant = participant;
+		this.killTargetId = killTargetId;
 	}
 
 	protected override void OnEvent (GameEvent gameEvent) {
