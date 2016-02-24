@@ -17,8 +17,9 @@ public class KillQuest : Quest
 	protected override void OnEvent (GameEvent gameEvent) {
 
 		if(gameEvent is DeathEvent) {
-			foreach(QuestObjective objective in questObjectives) {
-				
+			foreach(KillObjective objective in questObjectives) {
+
+				objective.sendDeathEvent ((DeathEvent) gameEvent);
 			}
 		}
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DeathEvent  {
+public class DeathEvent : GameEvent {
 
 	private Actor killedTarget; //represents the actor who was killed who initiated this event
 
