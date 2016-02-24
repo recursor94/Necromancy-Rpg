@@ -4,7 +4,7 @@
  * 
  * Defines behavior for quest requiring the killing of another npc or creature
  */
-public class KillQuest : Quest
+public sealed class KillQuest : Quest
 {
 	private string killTargetId;
 	public static Actor Participant; //must be static so works with base constructor
