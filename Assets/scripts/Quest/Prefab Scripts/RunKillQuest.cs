@@ -7,9 +7,11 @@ public class RunKillQuest : MonoBehaviour {
 	public  int killCount;
 	// Use this for initialization
 	private KillQuest quest;
+	public string name;
 	void Start () {
 
-		quest = new KillQuest (PlayerInformation.PlayerActor, targetId);
+		quest = new KillQuest (name, PlayerInformation.PlayerActor, targetId);
+		Debug.Log ("Starting Kill Quest: " + quest.ToString ());
 
 	
 	}

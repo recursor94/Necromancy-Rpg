@@ -6,12 +6,17 @@
  */
 public sealed class KillQuest : Quest
 {
-	private string killTargetId;
+	private string killTargetId;  
 	public static Actor Participant; //must be static so works with base constructor
-	public KillQuest (Actor particpant, string killTargetId) : base (Participant) {
+	public static string Name; //I have to make this static to use in super constructor call.  But this may very well not work correctly
+	public KillQuest (string name, Actor particpant, string killTargetId) : base (Name, Participant) {
 
 		Participant = participant;
 		this.killTargetId = killTargetId;
+		Name = name;
+
+		base.name = name;//temporary fix:  bad idea FIX THIS
+
 	}
 
 	protected override void OnEvent (GameEvent gameEvent) {
@@ -25,6 +30,10 @@ public sealed class KillQuest : Quest
 
 	}
 
+	public override string ToString ()
+	{
+		return base.ToString () + "[Kill Quest target id = " + killTargetId +"]";
+	}
 
 
 

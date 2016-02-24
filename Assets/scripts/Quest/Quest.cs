@@ -14,15 +14,18 @@ public abstract class Quest {
 	protected Actor participant; //Added participant actor to keep quest code independent of player
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
+	protected string name; //name of quest
 
-	protected Quest(Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
+	protected Quest(string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
 
+		this.name = name;
 		this.participant = particpant;
 		this.questObjectives = questObjectives;
 		this.conversations = conversations;
 	}
 
-	protected Quest(Actor participant) {
+	protected Quest(string name, Actor participant) {
+		this.name = name;
 		this.participant = participant;
 		this.questObjectives = new List<QuestObjective> ();
 		this.conversations = new List<Conversation> ();
@@ -72,6 +75,11 @@ public abstract class Quest {
 	public void SendEvent(GameEvent gameEvent) {
 		OnEvent (gameEvent);
 	} 
+	public override string ToString ()
+	{
+		return "Name: " + name + "\tNumber of Conversations: " + conversations.Count + "\t Number of objectives: "
+		+ questObjectives.Count;
+	}
 		
 	
 }
