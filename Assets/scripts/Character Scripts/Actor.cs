@@ -54,5 +54,8 @@ public abstract class Actor {
 		get {
 			return id;
 		}
+		set {
+			id = value;
+		}
 	}
 }

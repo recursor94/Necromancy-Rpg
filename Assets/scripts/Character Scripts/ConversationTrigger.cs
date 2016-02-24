@@ -9,7 +9,8 @@ public class ConversationTrigger : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D otherObject) {
 
 		DialogueController.UICanvas.SetActive (true);
-		Actor actor = Npc.Actor;
+		Actor actor = new TutorialQuestGiverActor();
+		Debug.Log (actor.Id);
 		Debug.Log (DialogueController.getValidConversation(actor.Id).DialogueText);
 		Canvas dialogueCanvas = GameObject.Find ("DialogueCanvas").GetComponent<Canvas> ();
 		dialogueCanvas.gameObject.SetActive (true);

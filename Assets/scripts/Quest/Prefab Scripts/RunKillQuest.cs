@@ -11,15 +11,26 @@ public class RunKillQuest : MonoBehaviour {
 	public List<string> targetIds;
 	public List<int> killCounts;
 	public Dictionary<string, int> targetDictionary;
+	public List<string> convNpcs;
+	public List<string> conversationText;
+	private List<Conversation> conversations;
 	void Start () {
 
 		targetDictionary = new Dictionary<string, int> ();
+		conversations = new List<Conversation> ();
 
 		for(int i = 0; i < targetIds.Count; i++) {
 			targetDictionary.Add (targetIds[i], killCounts[i]);
 		}
+		for(int i = 0; i < conversationText.Count; i++) {
+
+
+			conversations.Add (new Conversation (conversationText [i], convNpcs));
+		}
 		quest = new KillQuest (name, PlayerInformation.PlayerActor, targetDictionary);
+		quest.Conversations.AddRange (conversations);
 		Debug.Log ("Starting Kill Quest: " + quest.ToString ());
+		QuestManager.StartQuest (quest);
 
 	
 	}

@@ -38,9 +38,8 @@ public class QuestManager : MonoBehaviour {
 		Debug.Log (q);
 		ActiveQuests.Add (q);
 		//q.Start ();
-		Debug.Log (q.Conversations);
+		Debug.Log (q.Conversations.Count);
 		DialogueController.ActiveConversations.AddRange (q.Conversations);
-		Type questType = q.GetType ();
 
 	//	QuestManager.ControllerObject.AddComponent<typeof(quest);
 
