@@ -7,8 +7,8 @@ public class Enemy : Actor {
 
 
 //	protected int levelOffset; //Determines the offset of the enemy's level to the player
-	public Enemy(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) : 
-	base(combatMoveSet, characterName, level, healthCap, gender) {
+	public Enemy(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) : 
+	base(combatMoveSet, characterName, level, healthCap, gender, id) {
 		
 	}
 

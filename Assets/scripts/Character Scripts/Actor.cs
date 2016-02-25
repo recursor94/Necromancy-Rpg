@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System;
 
 public abstract class Actor {
-	private Dictionary<string, CombatAbility> combatMoveSet; //represents all of the combat moves actor is capable of. dictionary so it can be added to and removed from
+	private List<CombatAbility> combatMoveSet; //represents all of the combat moves actor is capable of. dictionary so it can be added to and removed from
 	//Is combatable?
 
 	private string characterName; //represents the in game name of the character.
@@ -26,7 +26,7 @@ public abstract class Actor {
 	private int health;
 	private string id;
 
-	protected Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
+	protected Actor(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;
@@ -34,7 +34,7 @@ public abstract class Actor {
 		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
 		this.id = Guid.NewGuid ().ToString ();
 	}
-	protected Actor(Dictionary<string, CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) {
+	protected Actor(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) {
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;
@@ -48,7 +48,7 @@ public abstract class Actor {
 	public void damage(int magnitude) {
 		health -= magnitude;
 	}
-	public Dictionary<string, CombatAbility> CombatMoveSet {get {return combatMoveSet;}}
+	public List<CombatAbility> CombatMoveSet {get {return combatMoveSet;}}
 
 	public string Id {
 		get {

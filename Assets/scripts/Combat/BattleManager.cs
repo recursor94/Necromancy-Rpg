@@ -1,14 +1,14 @@
 ﻿/* * Script which handles battle logic--initiating a UI and state machine object * Should be triggered by collision or detection by enemy units */ using UnityEngine; using System.Collections; public class BattleManager : MonoBehaviour { 
 	BattleStateMachine battleStateMachine;
 	BattleCalculator battleCalculator;
-	Actor Enemy; //for test purposes only
+	Actor enemy; //for test purposes only
+	Actor player;
 	void Awake() {
 
 		GetComponent <BattleManager>().enabled = false;
 	}
 	void Start () {
 		battleStateMachine = new BattleStateMachine ();
-		Enemy = new TESTEnemyActor ();
 		StartBattle ();
 	}
 	
@@ -62,7 +62,7 @@
 		battleCalculator = new BattleCalculator ();
 	}
 	public void EnemyTurn() {
-		battleCalculator.applyDamage (PlayerInformation.PlayerActor, new CombatAbilityBasic());
+		battleCalculator.applyDamage (player, new CombatAbilityBasic());
 	}
 
 	public void PostPlayerTurn() {
@@ -98,19 +98,19 @@
 	}
 
 	public Actor getWinner() {
-		return battleCalculator.getWinner (PlayerInformation.PlayerActor, Enemy);
+		return battleCalculator.getWinner (player, enemy);
 	}
 	public void OnGUI() {
 		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
-			foreach(var ability in PlayerInformation.PlayerActor.CombatMoveSet.Values) {
+			foreach(var ability in player.CombatMoveSet) {
 				if( GUILayout.Button (ability.Name)) {
-					battleCalculator.applyDamage (Enemy, ability);
+					battleCalculator.applyDamage (enemy, ability);
 					battleStateMachine.goNextState ();
 				}
 			}
 
 		}
-		GUILayout.Label ("Player Health: " + PlayerInformation.PlayerActor.Health);
-		GUILayout.Label ("Enemy Health: " + Enemy.Health);
+		GUILayout.Label ("Player Health: " + player.Health );
+		GUILayout.Label ("Enemy Health: " + enemy.Health);
 	}
 } 
