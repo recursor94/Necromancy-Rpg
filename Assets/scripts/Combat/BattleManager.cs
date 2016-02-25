@@ -8,6 +8,7 @@
 		GetComponent <BattleManager>().enabled = false;
 	}
 	void Start () {
+		player = PlayerScript.Player; //setting this to player static actor for convenience.
 		battleStateMachine = new BattleStateMachine ();
 		StartBattle ();
 	}
