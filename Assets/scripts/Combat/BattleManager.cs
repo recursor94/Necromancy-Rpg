@@ -5,12 +5,12 @@
 	Actor player;
 	void Awake() {
 
-		GetComponent <BattleManager>().enabled = false;
+		//GetComponent <BattleManager>().enabled = false;
 	}
 	void Start () {
 		player = PlayerScript.Player; //setting this to player static actor for convenience.
 		battleStateMachine = new BattleStateMachine ();
-		StartBattle ();
+//		StartBattle ();
 	}
 	
 	void Update () {
@@ -19,14 +19,15 @@
 		ChooseStateCallBack ();
 	}
 
-	public void StartBattle() {
+	public void StartBattle(Actor enemy) {
 
+		this.enemy = enemy;
 		battleStateMachine.StartBattle ();
 		Debug.Log (battleStateMachine.CurrentBattleState);
 
 	}
 
-	public void ChooseStateCallBack() {
+	private void ChooseStateCallBack() {
 		switch(battleStateMachine.CurrentBattleState) {
 		case BattleStateMachine.BattleStates.START:
 			initBattle ();
@@ -57,23 +58,23 @@
 	
 	}
 
-	public void initBattle() {
+	private void initBattle() {
 		Debug.Log("initializing Battle Code.  Should only be called once!");
 	
 		battleCalculator = new BattleCalculator ();
 	}
-	public void EnemyTurn() {
+	private void EnemyTurn() {
 		battleCalculator.applyDamage (player, new CombatAbilityBasic());
 	}
 
-	public void PostPlayerTurn() {
+	private void PostPlayerTurn() {
 		/*
 		 * Handles events that happen after player turn is over
 		 * such as dot effects on player
 		 */
 		PostTurnEffects ();
 	}
-	public void PostEnemyTurn() {
+	private void PostEnemyTurn() {
 
 		/*
 		 * Handles events that happen after enemy turn is over
@@ -82,7 +83,7 @@
 		PostTurnEffects ();
 	}
 
-	public void PostTurnEffects() {
+	private void PostTurnEffects() {
 		/* Defines behavior that occurs
 		 * at the end of each turn, 
 		 * both for an end of the player turn, and the end of the 
@@ -98,20 +99,20 @@
 
 	}
 
-	public Actor getWinner() {
+	private Actor getWinner() {
 		return battleCalculator.getWinner (player, enemy);
 	}
-	public void OnGUI() {
-		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
-			foreach(var ability in player.CombatMoveSet) {
-				if( GUILayout.Button (ability.Name)) {
-					battleCalculator.applyDamage (enemy, ability);
-					battleStateMachine.goNextState ();
-				}
-			}
-
-		}
-		GUILayout.Label ("Player Health: " + player.Health );
-		GUILayout.Label ("Enemy Health: " + enemy.Health);
-	}
+//	public void OnGUI() {
+//		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
+//			foreach(var ability in player.CombatMoveSet) {
+//				if( GUILayout.Button (ability.Name)) {
+//					battleCalculator.applyDamage (enemy, ability);
+//					battleStateMachine.goNextState ();
+//				}
+//			}
+//
+//		}
+//		GUILayout.Label ("Player Health: " + player.Health );
+//		GUILayout.Label ("Enemy Health: " + enemy.Health);
+//	}
 } 
