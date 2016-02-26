@@ -23,20 +23,20 @@
 
 		this.enemy = enemy;
 		battleStateMachine.StartBattle ();
-		Debug.Log (battleStateMachine.CurrentBattleState);
 
 	}
 
 	private void ChooseStateCallBack() {
 		switch(battleStateMachine.CurrentBattleState) {
 		case BattleStateMachine.BattleStates.START:
-			initBattle ();
+			InitBattle ();
 			battleStateMachine.goNextState ();
 			break;
 		case BattleStateMachine.BattleStates.PLAYERTURN:
 			//Player goes first by default, may make this more complicated
 			//by determining first turn through role
-
+			PlayerTurn ();
+			battleStateMachine.goNextState ();
 			break;
 		case BattleStateMachine.BattleStates.ENDPLAYERTURN:
 			PostPlayerTurn ();
@@ -57,8 +57,11 @@
 		}
 	
 	}
+	private void PlayerTurn() {
+		
+	}
 
-	private void initBattle() {
+	private void InitBattle() {
 		Debug.Log("initializing Battle Code.  Should only be called once!");
 	
 		battleCalculator = new BattleCalculator ();
