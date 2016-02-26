@@ -23,4 +23,14 @@ public class CameraFollow : MonoBehaviour {
 			transform.position = Vector3.Lerp (transform.position, Target.position, mSpeed) + new Vector3(0,0, cameraZ);
 		}
 	}
+
+	public void SetPositionToTarget() {
+		/*sets the camera directly at the target's position.
+		 */
+		if(Target) {
+			transform.position =  Target.transform.position + new Vector3(0,0, cameraZ);
+
+		}
+
+	}
 }
