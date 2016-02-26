@@ -93,7 +93,7 @@
 		 * both for an end of the player turn, and the end of the 
 		 * enemy turn.  EG. Checking if there is a winner.
 		 */
-		Actor winner = getWinner ();
+		Actor winner = GetWinner ();
 
 		if(winner != null) {
 
@@ -103,8 +103,8 @@
 
 	}
 
-	private Actor getWinner() {
-		return battleCalculator.getWinner ( player, enemy);
+	private Actor GetWinner() {
+		return battleCalculator.getWinner (player, enemy);
 	}
 //	public void OnGUI() {
 //		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {
