@@ -53,7 +53,8 @@
 			battleStateMachine.goNextState ();
 			break;
 		case BattleStateMachine.BattleStates.END:
-			
+			PostBattleEffects ();
+			battleStateMachine.turnOff ();
 			break;
 		}
 	
@@ -103,6 +104,14 @@
 
 	}
 
+	private void PostBattleEffects() {
+		/*Executes behavior that occurs
+		 * at the end of the battle,
+		 * such as granting the players rewards
+		 */
+
+		 
+	}
 	private Actor GetWinner() {
 		return battleCalculator.getWinner (player, enemy);
 	}

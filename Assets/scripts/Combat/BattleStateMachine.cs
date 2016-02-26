@@ -64,6 +64,13 @@ public class BattleStateMachine  {
 		 */
 		currentBattleState = BattleStates.START;
 	}
+	public void turnOff() {
+		/*
+		 * executed at the end of the battle,
+		 * turns the state machine off.
+		 */
+		currentBattleState = BattleStates.OFF;
+	}
 
 
 }
