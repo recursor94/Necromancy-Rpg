@@ -22,6 +22,7 @@
 	public void StartBattle(Actor enemy) {
 
 		this.enemy = enemy;
+		Debug.Log (enemy.ToString ());
 		battleStateMachine.StartBattle ();
 
 	}
@@ -103,7 +104,7 @@
 	}
 
 	private Actor getWinner() {
-		return battleCalculator.getWinner (player, enemy);
+		return battleCalculator.getWinner ( player, enemy);
 	}
 //	public void OnGUI() {
 //		if(battleStateMachine.CurrentBattleState == BattleStateMachine.BattleStates.PLAYERTURN) {

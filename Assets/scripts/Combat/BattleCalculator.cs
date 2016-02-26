@@ -11,9 +11,11 @@ public class BattleCalculator {
 
 	public Actor getWinner(Actor player, Actor enemy) {
 
+		Debug.Log (enemy.Health);
+		Debug.Log ((player.Health));
 		if(player.Health <=0) {
 
-			return enemy;
+			return   enemy;
 		}
 		else if(enemy.Health <= 0) {
 			return player;
