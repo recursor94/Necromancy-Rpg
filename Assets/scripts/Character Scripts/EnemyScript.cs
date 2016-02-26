@@ -12,6 +12,7 @@ public class EnemyScript : MonoBehaviour {
 	public int healthCap;
 	public Actor.Gender gender;
 	private List<CombatAbility> combatMoveSet;
+
 	void Start () {
 
 		combatMoveSet = new List<CombatAbility> ();
@@ -20,8 +21,11 @@ public class EnemyScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 	
+	}
+	void FixedUpdate() {
+		
 	}
 
 	void OnTriggerEnter2D() {

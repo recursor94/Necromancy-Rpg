@@ -1,6 +1,10 @@
-﻿/* * Script which handles battle logic--initiating a UI and state machine object * Should be triggered by collision or detection by enemy units */ using UnityEngine; using System.Collections; public class BattleManager : MonoBehaviour { 
+﻿/* * Script which handles battle logic--initiating a UI and state machine object * Should be triggered by collision or detection by enemy units */ using UnityEngine; using System.Collections;
+using UnityEngine.UI;
+
+ public class BattleManager : MonoBehaviour { 
 	BattleStateMachine battleStateMachine;
 	BattleCalculator battleCalculator;
+	BattleUI ui;
 	Actor enemy; //for test purposes only
 	Actor player;
 	void Awake() {
@@ -10,6 +14,9 @@
 	void Start () {
 		player = PlayerScript.Player; //setting this to player static actor for convenience.
 		battleStateMachine = new BattleStateMachine ();
+		Dropdown attackChooser = GameObject.Find ("Attack Picker").GetComponent<Dropdown> (); 
+		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
+		ui = new BattleUI (player, attackChooser, battleCamera);
 //		StartBattle ();
 	}
 	
@@ -67,6 +74,7 @@
 		Debug.Log("initializing Battle Code.  Should only be called once!");
 	
 		battleCalculator = new BattleCalculator ();
+		ui.setActive (GameObject.Find ("Main Camera").GetComponent<Camera> ());
 	}
 	private void EnemyTurn() {
 		battleCalculator.applyDamage (player, new CombatAbilityBasic());
