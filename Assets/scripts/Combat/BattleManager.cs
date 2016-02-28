@@ -14,15 +14,15 @@ using UnityEngine.UI;
 	void Start () {
 		player = PlayerScript.Player; //setting this to player static actor for convenience.
 		battleStateMachine = new BattleStateMachine ();
-		Dropdown attackChooser = GameObject.Find ("Attack Picker").GetComponent<Dropdown> (); 
+		//Scrollbar attackChooser = GameObject.Find ("Attack Picker").GetComponent<Scrollbar> (); 
 		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
-		ui = new BattleUI (player, attackChooser, battleCamera);
+	ui = new BattleUI (player, null, battleCamera);
 //		StartBattle ();
 	}
 	
 	void Update () {
 
-		Debug.Log(battleStateMachine.CurrentBattleState);
+		//Debug.Log(battleStateMachine.CurrentBattleState);
 		ChooseStateCallBack ();
 	}
 
