@@ -7,6 +7,8 @@ using UnityEngine.UI;
 	BattleUI ui;
 	Actor enemy; //for test purposes only
 	Actor player;
+
+	public static CombatAbility AbilityChosen = null;
 	void Awake() {
 
 		//GetComponent <BattleManager>().enabled = false;
@@ -44,7 +46,6 @@ using UnityEngine.UI;
 			//Player goes first by default, may make this more complicated
 			//by determining first turn through role
 			PlayerTurn ();
-			battleStateMachine.goNextState ();
 			break;
 		case BattleStateMachine.BattleStates.ENDPLAYERTURN:
 			PostPlayerTurn ();
@@ -67,6 +68,13 @@ using UnityEngine.UI;
 	
 	}
 	private void PlayerTurn() {
+		if(AbilityChosen!= null) {
+			battleCalculator.applyDamage (enemy, AbilityChosen);
+			//ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
+			Debug.Log("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
+			AbilityChosen = null;
+			battleStateMachine.goNextState ();
+		}
 		
 	}
 
@@ -117,6 +125,7 @@ using UnityEngine.UI;
 		 * at the end of the battle,
 		 * such as granting the players rewards
 		 */
+		ui.setInactive (GameObject.Find ("Main Camera").GetComponent <Camera> ());
 
 		 
 	}
