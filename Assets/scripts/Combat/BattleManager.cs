@@ -16,7 +16,7 @@ using UnityEngine.UI;
 		battleStateMachine = new BattleStateMachine ();
 		//Scrollbar attackChooser = GameObject.Find ("Attack Picker").GetComponent<Scrollbar> (); 
 		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
-	ui = new BattleUI (player, null, battleCamera);
+	ui = new BattleUI (player, battleCamera);
 //		StartBattle ();
 	}
 	
