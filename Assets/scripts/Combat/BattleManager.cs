@@ -18,6 +18,7 @@ using UnityEngine.UI;
 		battleStateMachine = new BattleStateMachine ();
 		//Scrollbar attackChooser = GameObject.Find ("Attack Picker").GetComponent<Scrollbar> (); 
 		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
+		Debug.Log ("Playerscript.player: " + PlayerScript.Player.Health);
 	ui = new BattleUI (player, battleCamera);
 //		StartBattle ();
 	}
@@ -70,7 +71,7 @@ using UnityEngine.UI;
 	private void PlayerTurn() {
 		if(AbilityChosen!= null) {
 			battleCalculator.applyDamage (enemy, AbilityChosen);
-			//ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
+			ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
 			Debug.Log("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
 			AbilityChosen = null;
 			battleStateMachine.goNextState ();

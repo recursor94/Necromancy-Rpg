@@ -16,9 +16,12 @@ public class PlayerScript : MonoBehaviour {
 
 	private static List<CombatAbility> combatMoves = new List<CombatAbility>();
 
-	void Start () {
+	void Awake() {
 		combatMoves.Add (new CombatAbilityBasic());
 		Player =  new PlayerActorFactory ().CreateActor (combatMoves, characterName, level, healthCap, gender, id);
+	}
+	void Start () {
+
 	}
 	
 	// Update is called once per frame
