@@ -15,6 +15,7 @@ public abstract class Quest {
 	protected List<QuestObjective> questObjectives; //a list of all quest objectives a given quest has
 	protected List<Conversation> conversations;
 	protected string name; //name of quest
+	protected bool isComplete;
 
 	protected Quest(string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
 
@@ -39,7 +40,7 @@ public abstract class Quest {
 		
 	}
 
-	public bool isComplete() {
+	public bool IsComplete() {
 		/*
 		 * tests whether quest is complete by cycling through 
 		 * all quest objectives in the dictionary and testing 
@@ -76,6 +77,16 @@ public abstract class Quest {
 	public void SendEvent(GameEvent gameEvent) {
 		OnEvent (gameEvent);
 	} 
+
+	protected void ComputeComplete() {
+		//computes whether the quest is complete
+
+		if(IsComplete()) {
+			this.isComplete = true;
+			
+		}
+
+	}
 	public override string ToString ()
 	{
 		return "Name: " + name + "\tNumber of Conversations: " + conversations.Count + "\t Number of objectives: "

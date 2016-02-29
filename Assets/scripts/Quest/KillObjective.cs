@@ -49,4 +49,11 @@ public sealed class KillObjective : QuestObjective  {
 
 
 	
+	public override void sendEvent (GameEvent e)
+	{
+		if(e is DeathEvent) {
+
+		sendDeathEvent ((DeathEvent) e);
+		}
+	}
 }

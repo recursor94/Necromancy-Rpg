@@ -40,6 +40,7 @@ public abstract class QuestObjective  {
 		}
 
 	}
+	public abstract void sendEvent (GameEvent e);
 
 	protected void complete() {
 		//sets iscomplete to true and calls on complete
