@@ -34,6 +34,7 @@ using UnityEngine.UI;
 		this.enemy = enemy;
 		Debug.Log (enemy.ToString ());
 		battleStateMachine.StartBattle ();
+		ui.writeBattleAlert ("Player Health: " + player.Health + "\t Enemy Health: " + enemy.Health);
 
 	}
 
@@ -74,7 +75,6 @@ using UnityEngine.UI;
 			battleCalculator.applyDamage (enemy, AbilityChosen);
 			ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
 			Debug.Log("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
-			AbilityChosen = null;
 			battleStateMachine.goNextState ();
 		}
 		
@@ -95,6 +95,9 @@ using UnityEngine.UI;
 		 * Handles events that happen after player turn is over
 		 * such as dot effects on player
 		 */
+		ui.disableAttackUI ();
+		ui.writeBattleAlert ("You hit " + enemy.Id + " for " + AbilityChosen.BaseDamage);
+		AbilityChosen = null;
 		PostTurnEffects ();
 	}
 	private void PostEnemyTurn() {
@@ -104,7 +107,8 @@ using UnityEngine.UI;
 		 * such as dot effects on enemy
 		 */
 
-		ui.disableAttackUI ();
+		ui.writeBattleAlert (enemy.Id + "Hits you for " + 50);
+
 		PostTurnEffects ();
 	}
 
@@ -115,10 +119,12 @@ using UnityEngine.UI;
 		 * enemy turn.  EG. Checking if there is a winner.
 		 */
 		Actor winner = GetWinner ();
+		ui.writeBattleAlert ("Player Health: " + player.Health + "\t Enemy Health: " + enemy.Health);
 
 		if(winner != null) {
 
 			Debug.Log (winner + " has won!");
+			ui.writeBattleAlert (winner + " has won!");
 			battleStateMachine.EndBattle ();
 		}
 
