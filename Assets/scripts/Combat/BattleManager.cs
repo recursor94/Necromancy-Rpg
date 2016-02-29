@@ -69,6 +69,7 @@ using UnityEngine.UI;
 	
 	}
 	private void PlayerTurn() {
+		ui.enableAttackUI ();
 		if(AbilityChosen!= null) {
 			battleCalculator.applyDamage (enemy, AbilityChosen);
 			ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
@@ -102,6 +103,8 @@ using UnityEngine.UI;
 		 * Handles events that happen after enemy turn is over
 		 * such as dot effects on enemy
 		 */
+
+		ui.disableAttackUI ();
 		PostTurnEffects ();
 	}
 

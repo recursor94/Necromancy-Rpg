@@ -22,6 +22,9 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(actor.Health <= 0) {
+			Destroy (gameObject);
+		}
 	
 	}
 	void FixedUpdate() {
