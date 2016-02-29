@@ -38,6 +38,10 @@ public sealed class KillQuest : Quest
 		}
 
 	}
+	protected override string getQuestObjective ()
+	{
+		return "";
+	}
 
 	public override string ToString ()
 	{

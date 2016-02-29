@@ -72,6 +72,7 @@ public abstract class Quest {
 		}
 	}
 
+	protected abstract string getQuestObjective(); //Returns quest Objective string for quest
 	public void SendEvent(GameEvent gameEvent) {
 		OnEvent (gameEvent);
 	} 
