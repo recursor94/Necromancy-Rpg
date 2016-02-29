@@ -31,14 +31,6 @@ public abstract class Quest {
 		this.questObjectives = new List<QuestObjective> ();
 		this.conversations = new List<Conversation> ();
 	}
-	protected void Start () {
-		
-	} 
-	
-	// Update is called once per frame
-	protected void Update () {
-		
-	}
 
 	public bool IsComplete() {
 		/*
@@ -86,6 +78,12 @@ public abstract class Quest {
 			
 		}
 
+	}
+	protected void sendEvent(GameEvent e) {
+		//Send a game event to every objective in the quest objectives list, updating them if appropriate
+		foreach(QuestObjective objective in questObjectives) {
+			objective.sendEvent (e); 
+		}
 	}
 	public override string ToString ()
 	{
