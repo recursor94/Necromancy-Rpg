@@ -11,6 +11,10 @@ public abstract class QuestObjective  {
 	private bool isComplete;
 	private string objectiveText;
 
+	public QuestObjective() {
+		isComplete = false;
+
+	}
 	public bool IsComplete {
 		get {
 			return isComplete;
@@ -49,6 +53,7 @@ public abstract class QuestObjective  {
 	}
 	protected void onComplete() {
 		//Event called on the complete of the objective
+		isComplete = true;
 		Debug.Log ("Objective Complete!");
 	}
 

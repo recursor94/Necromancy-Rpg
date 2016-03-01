@@ -13,7 +13,7 @@ public sealed class KillObjective : QuestObjective  {
 	private int killedCount;
 
 
-	public KillObjective(string actorTargetId) {
+	public KillObjective(string actorTargetId) : base() {
 
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = 1; //by default only one will probably exist/need to be killed

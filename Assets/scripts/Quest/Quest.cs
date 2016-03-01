@@ -40,7 +40,7 @@ public abstract class Quest {
 		foreach(QuestObjective objective in questObjectives) {
 
 			if(!objective.IsComplete) {
-				Debug.Log ("Objective not complete! " + objective);
+				Debug.Log ("Objective not complete! " + objective + " Total Number of Objectives: " + questObjectives.Count);
 				return false;
 			}
 		}
