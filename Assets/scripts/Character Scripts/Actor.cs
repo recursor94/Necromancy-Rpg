@@ -40,7 +40,7 @@ public abstract class Actor {
 		this.gender = gender;
 		this.healthCap = healthCap; 
 		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
-		id = Guid.NewGuid ().ToString ();
+		this.id = id;
 	}
 	public int Health{ get { return health;
 		}}

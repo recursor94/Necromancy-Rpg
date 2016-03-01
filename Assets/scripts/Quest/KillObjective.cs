@@ -37,6 +37,7 @@ public sealed class KillObjective : QuestObjective  {
 		//respond to target actor's death
 		Debug.Log ("Reminder Actor Target ID is: " + actorTargetId);
 		Debug.Log ("Death Event" + deathEvent.ToString ());
+		Debug.Log ("Sent Actor is: " + deathEvent.KilledTarget.Id);
 
 		if(deathEvent.KilledTarget.Id.Equals(actorTargetId)) {
 
