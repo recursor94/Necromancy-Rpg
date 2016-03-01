@@ -137,6 +137,16 @@ using UnityEngine.UI;
 		 * such as granting the players rewards
 		 */
 		ui.setInactive (GameObject.Find ("Main Camera").GetComponent <Camera> ());
+		//Check if player won and if he did, grant him the enemy's xp
+
+		Actor winner = GetWinner ();
+		if(winner is PlayerActor) {
+			PlayerActor  playerActor = (PlayerActor)winner;
+
+			Enemy defeatedActor = (Enemy)enemy;
+			playerActor.GiveXp (defeatedActor.BaseXp);
+
+		}
 
 		 
 	}
