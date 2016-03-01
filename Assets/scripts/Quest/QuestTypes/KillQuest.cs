@@ -29,13 +29,13 @@ public sealed class KillQuest : Quest
 	}
 
 	protected override void OnEvent (GameEvent gameEvent) {
-
-		if(gameEvent is DeathEvent) {
-			foreach(KillObjective objective in questObjectives) {
-
-				objective.sendDeathEvent ((DeathEvent) gameEvent);
-			}
-		}
+//
+//		if(gameEvent is DeathEvent) {
+//			foreach(KillObjective objective in questObjectives) {
+//
+//				objective.sendDeathEvent ((DeathEvent) gameEvent);
+//			}
+//		}
 
 	}
 	protected override string getQuestObjective ()

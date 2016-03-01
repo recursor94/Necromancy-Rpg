@@ -40,9 +40,11 @@ public abstract class Quest {
 		foreach(QuestObjective objective in questObjectives) {
 
 			if(!objective.IsComplete) {
+				Debug.Log ("Objective not complete! " + objective);
 				return false;
 			}
 		}
+		Debug.Log ("All objectives complete!");
 		return true;
 	}
 
@@ -66,25 +68,22 @@ public abstract class Quest {
 	}
 
 	protected abstract string getQuestObjective(); //Returns quest Objective string for quest
-	public void SendEvent(GameEvent gameEvent) {
-		OnEvent (gameEvent);
-	} 
-
-	protected void ComputeComplete() {
-		//computes whether the quest is complete
-
-		if(IsComplete()) {
-			this.isComplete = true;
-			
-		}
-
-	}
-	protected void sendEvent(GameEvent e) {
-		//Send a game event to every objective in the quest objectives list, updating them if appropriate
+	public void SendEvent(GameEvent e) {
 		foreach(QuestObjective objective in questObjectives) {
 			objective.sendEvent (e); 
 		}
+	} 
+
+	public void ComputeComplete() {
+		//computes whether the quest is complete
+		Debug.Log ("Computing if quest is complete");
+		if(IsComplete()) {
+			this.isComplete = true;
+			Debug.Log ("Quest complete!");
+		}
+
 	}
+
 	public override string ToString ()
 	{
 		return "Name: " + name + "\tNumber of Conversations: " + conversations.Count + "\t Number of objectives: "

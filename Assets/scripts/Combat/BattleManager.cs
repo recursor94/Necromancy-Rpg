@@ -17,9 +17,7 @@ using UnityEngine.UI;
 		player = PlayerScript.Player; //setting this to player static actor for convenience.
 		battleStateMachine = new BattleStateMachine ();
 		//Scrollbar attackChooser = GameObject.Find ("Attack Picker").GetComponent<Scrollbar> (); 
-		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
 		Debug.Log ("Playerscript.player: " + PlayerScript.Player.Health);
-	ui = new BattleUI (player, battleCamera);
 //		StartBattle ();
 	}
 	
@@ -31,6 +29,9 @@ using UnityEngine.UI;
 
 	public void StartBattle(Actor enemy) {
 
+
+		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
+		ui = new BattleUI (player, battleCamera);
 		this.enemy = enemy;
 		Debug.Log (enemy.ToString ());
 		battleStateMachine.StartBattle ();

@@ -22,8 +22,10 @@ public class QuestEventHandler  {
 		 * the appropriate quests will respond to it.
 		 * kind of sloppy but it should work
 		 */
+		Debug.Log ("Number of Active Quests: " + ActiveQuests.Count);
 		foreach(Quest quest in ActiveQuests) {
 			quest.SendEvent (e);
+			quest.ComputeComplete ();
 		}
 	}
 

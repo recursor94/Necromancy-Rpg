@@ -23,6 +23,8 @@ public class EnemyScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(actor.Health <= 0) {
+			DeathEvent deathEvent = new DeathEvent (actor);
+			QuestEventHandler.sendQuestEvent (deathEvent);
 			Destroy (gameObject);
 		}
 	

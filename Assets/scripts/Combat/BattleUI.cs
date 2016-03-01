@@ -30,8 +30,7 @@ public class BattleUI  {
 //			abilityScrollBar.hand
 //			abilityScrollBar.gameObject.AddComponent <Button> (choice);
 
-		GameObject prefab = null;
-			 prefab = GameObject.Find ("Ability Button");
+		GameObject prefab = GameObject.Find ("Attack Button");
 		foreach(CombatAbility ability in playerAbilities) {
 
 			GameObject attackButton = GameObject.Instantiate (prefab);
@@ -45,7 +44,6 @@ public class BattleUI  {
 		prefab.SetActive (false);
 		abilityGrid = GameObject.Find ("Grid");
 		CombatMessageBox = GameObject.Find ("Combat Message Box").GetComponent <Text> ();
-		CombatMessageBox.enabled = false;
 //		}
 
 	

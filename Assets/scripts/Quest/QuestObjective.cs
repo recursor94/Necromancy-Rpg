@@ -29,7 +29,7 @@ public abstract class QuestObjective  {
 		}
 	}
 
-	protected string ObjectiveText {
+	public string ObjectiveText {
 		//in protected method because should not be accessed outside of class
 		//or sub classes but behavior might change
 		get {

@@ -35,6 +35,8 @@ public sealed class KillObjective : QuestObjective  {
 	public void sendDeathEvent(DeathEvent deathEvent) {
 
 		//respond to target actor's death
+		Debug.Log ("Reminder Actor Target ID is: " + actorTargetId);
+		Debug.Log ("Death Event" + deathEvent.ToString ());
 
 		if(deathEvent.KilledTarget.Id.Equals(actorTargetId)) {
 
@@ -51,9 +53,14 @@ public sealed class KillObjective : QuestObjective  {
 	
 	public override void sendEvent (GameEvent e)
 	{
+		Debug.Log ("SENDING EVENT TO KILL OBJECTIVE");
 		if(e is DeathEvent) {
+			Debug.Log ("Event is death event");
 
 		sendDeathEvent ((DeathEvent) e);
+		}
+		else {
+			Debug.Log("Event is not death event");
 		}
 	}
 }

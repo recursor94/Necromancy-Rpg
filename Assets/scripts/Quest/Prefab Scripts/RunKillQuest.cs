@@ -31,7 +31,7 @@ public class RunKillQuest : MonoBehaviour {
 		quest = new KillQuest (name, participant, targetDictionary);
 		quest.Conversations.AddRange (conversations);
 		Debug.Log ("Starting Kill Quest: " + quest.ToString ());
-		QuestManager.StartQuest (quest);
+		QuestEventHandler.AddActiveQuest (quest);
 
 	
 	}

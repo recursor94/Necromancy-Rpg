@@ -1,7 +1,6 @@
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Assembly-CSharp-Editor.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Assembly-CSharp-Editor.pdb
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\nunit.framework.dll
-C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\UnityEditor.Advertisements.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\UnityEditor.Android.Extensions.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\UnityEditor.dll
@@ -26,7 +25,6 @@ C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Unity.UNetWe
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Mono.Cecil.Mdb.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
-C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Messaging.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 C:\Users\recursor94\Documents\necromancywithtutorial\Temp\bin\Debug\Assembly-CSharp.pdb
