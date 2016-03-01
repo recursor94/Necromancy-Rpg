@@ -28,4 +28,11 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public static void sendPlayerEvent(GameEvent e) {
+		/* for player events including item drops and xp gains
+		 */
+
+
+	}
 }
