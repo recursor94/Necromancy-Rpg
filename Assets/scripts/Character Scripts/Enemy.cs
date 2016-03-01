@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 
- public class enemy : Actor { 
+ public class Enemy : Actor { 
 
 	private int baseXp; //unmodified xp granted when defeated
 	private  Dictionary<GameItem, int> droppableItems;  //list of items that can be dropped from the enemy. along with corresponding probability of being dropped.
 
 //	protected int levelOffset; //Determines the offset of the enemy's level to the player
-	public enemy(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) : 
+	public Enemy(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id, int baseXp) : 
 	base(combatMoveSet, characterName, level, healthCap, gender, id) {
-		
+
+		BaseXp = baseXp;
 	}
 	public int BaseXp {get; set;}
 

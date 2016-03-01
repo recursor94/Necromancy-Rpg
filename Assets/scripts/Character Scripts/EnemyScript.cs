@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour {
 	public string characterName;
 	public int level;
 	public int healthCap;
+	public int baseXp;
 	public Actor.Gender gender;
 	private List<CombatAbility> combatMoveSet;
 
@@ -17,7 +18,7 @@ public class EnemyScript : MonoBehaviour {
 
 		combatMoveSet = new List<CombatAbility> ();
 		combatMoveSet.Add (new CombatAbilityBasic());
-		actor = new EnemyActorFactory ().CreateActor (combatMoveSet, characterName, level, healthCap, gender, id);
+		actor = new EnemyActorFactory ().CreateEnemyActor (combatMoveSet, characterName, level, healthCap, gender, id, baseXp);
 	}
 	
 	// Update is called once per frame
