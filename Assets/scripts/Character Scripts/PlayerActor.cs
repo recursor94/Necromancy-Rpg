@@ -46,6 +46,6 @@ public sealed class PlayerActor : Actor {
 		/*
 		 * uses formula based on level to determine how much xp is needed to advance to the next level.
 		 */
-		return (ulong) Math.Pow (level, 3);
+		return (ulong) Math.Pow (level + 1, 3);
 	}
 }
