@@ -73,7 +73,7 @@ using UnityEngine.UI;
 	private void PlayerTurn() {
 		ui.enableAttackUI ();
 		if(AbilityChosen!= null) {
-			battleCalculator.applyDamage (enemy, AbilityChosen);
+			battleCalculator.applyDamage (enemy, AbilityChosen, player.DamageModifier);
 			ui.writeBattleAlert ("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
 			Debug.Log("Hit " + enemy.Id + "For " + AbilityChosen.BaseDamage);
 			battleStateMachine.goNextState ();
@@ -88,7 +88,7 @@ using UnityEngine.UI;
 		ui.setActive (GameObject.Find ("Main Camera").GetComponent<Camera> ());
 	}
 	private void EnemyTurn() {
-		battleCalculator.applyDamage (player, new CombatAbilityBasic());
+		battleCalculator.applyDamage (player, new CombatAbilityBasic(), enemy.DamageModifier);
 	}
 
 	private void PostPlayerTurn() {
@@ -144,7 +144,7 @@ using UnityEngine.UI;
 			PlayerActor  playerActor = (PlayerActor)winner;
 
 			Enemy defeatedActor = (Enemy)enemy;
-			playerActor.GiveXp (defeatedActor.BaseXp);
+			playerActor.GiveXp (defeatedActor.getGrantableXp ());
 
 		}
 

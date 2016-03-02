@@ -12,9 +12,10 @@ using System.Collections.Generic;
 	public Enemy(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id, int baseXp) : 
 	base(combatMoveSet, characterName, level, healthCap, gender, id) {
 
-		BaseXp = baseXp;
+		droppableItems = new Dictionary<GameItem, int> ();
+		this.baseXp = baseXp;
 	}
-	public int BaseXp {get; set;}
+
 
 
 	public void AddDroppableItem(GameItem item) {
@@ -23,6 +24,13 @@ using System.Collections.Generic;
 	}
 	public void AddDroppableItem(GameItem item, int dropChance) {
 		//Add droppable item with a specified drop chance
+	}
+
+	public int getGrantableXp() {
+		/*takes base xp, multiplies it by level, and in future modifies based on player level.
+		 */
+
+		return baseXp * level;
 	}
 
 

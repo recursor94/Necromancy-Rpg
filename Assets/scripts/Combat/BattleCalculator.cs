@@ -24,9 +24,9 @@ public class BattleCalculator {
 
 	}
 
-	public void applyDamage(Actor target, CombatAbility combatMove) {
+	public void applyDamage(Actor target, CombatAbility combatMove, int damageModifier) {
 
-		target.damage (combatMove.BaseDamage);
+		target.damage (combatMove.BaseDamage * damageModifier);
 	}
 
 }

@@ -13,7 +13,8 @@ public abstract class Actor {
 
 	private string characterName; //represents the in game name of the character.
 
-	private int level; //represents level of character
+	protected int level; //represents level of character
+	protected int damageModifier; //amount of damage added or subtracted to the base damage of every attack actor knows
 	public enum Gender {
 		MALE,
 		FEMALE,
@@ -33,6 +34,7 @@ public abstract class Actor {
 		this.healthCap = healthCap; 
 		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
 		this.id = Guid.NewGuid ().ToString ();
+		damageModifier = level;
 	}
 	protected Actor(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) {
 		this.combatMoveSet = combatMoveSet;
@@ -41,6 +43,7 @@ public abstract class Actor {
 		this.healthCap = healthCap; 
 		this.health = healthCap; //character starts at full health.  May change in the future for special encounters
 		this.id = id;
+		damageModifier = level;
 	}
 	public int Health{ get { return health;
 		}}
@@ -58,4 +61,19 @@ public abstract class Actor {
 			id = value;
 		}
 	}
+
+	public string CharacterName {
+		get {
+			return characterName;
+		}
+	}
+
+	public int DamageModifier {
+		get {
+			//make sure damage modifier is updated before it's returned
+			damageModifier = level;
+			return damageModifier;
+		}
+	}
+
 }
