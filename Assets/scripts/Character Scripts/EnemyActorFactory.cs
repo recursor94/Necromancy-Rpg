@@ -9,7 +9,7 @@ public class EnemyActorFactory : ActorFactory {
 		return null;
 	}
 
-	public Enemy CreateEnemyActor(List <CombatAbility>  combatMoveSet, string characterName, int level, int healthCap, Actor.Gender gender, string id, int baseXp) {
+	public Enemy CreateEnemyActor(List <CombatAbility>  combatMoveSet, string characterName, int level, int healthCap, Actor.Gender gender, string id, ulong baseXp) {
 
 		return new Enemy(combatMoveSet, characterName, level, healthCap, gender, id, baseXp);
 	}

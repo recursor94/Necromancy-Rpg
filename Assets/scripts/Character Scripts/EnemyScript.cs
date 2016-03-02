@@ -10,7 +10,7 @@ public class EnemyScript : MonoBehaviour {
 	public string characterName;
 	public int level;
 	public int healthCap;
-	public int baseXp;
+	public ulong baseXp;
 	public Actor.Gender gender;
 	private List<CombatAbility> combatMoveSet;
 
