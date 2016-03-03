@@ -10,7 +10,7 @@ public class EnemyScript : MonoBehaviour {
 	public string characterName;
 	public int level;
 	public int healthCap;
-	public ulong baseXp;
+	public int baseXp; //For some reason unity's inspector doesn't save ulong values--so I need to use an int for this field, that's okay because I'm going to use xml files later to determine state
 	public Actor.Gender gender;
 	private List<CombatAbility> combatMoveSet;
 
@@ -18,7 +18,7 @@ public class EnemyScript : MonoBehaviour {
 
 		combatMoveSet = new List<CombatAbility> ();
 		combatMoveSet.Add (new CombatAbilityBasic());
-		actor = new EnemyActorFactory ().CreateEnemyActor (combatMoveSet, characterName, level, healthCap, gender, id, baseXp);
+		actor = new EnemyActorFactory ().CreateEnemyActor (combatMoveSet, characterName, level, healthCap, gender, id, (ulong) baseXp);
 	}
 	
 	// Update is called once per frame

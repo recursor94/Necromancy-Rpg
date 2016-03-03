@@ -13,6 +13,7 @@ using System.Collections.Generic;
 	base(combatMoveSet, characterName, level, healthCap, gender, id) {
 
 		droppableItems = new Dictionary<GameItem, int> ();
+        Debug.Log("Enemy base xp: " + baseXp);
 		this.baseXp = baseXp;
 	}
 
@@ -27,10 +28,11 @@ using System.Collections.Generic;
 	}
 
 	public ulong getGrantableXp() {
-		/*takes base xp, multiplies it by level, and in future modifies based on player level.
+        /*takes base xp, multiplies it by level, and in future modifies based on player level.
 		 */
-
-		return baseXp * (ulong)level;
+        ulong xp = baseXp * (ulong)level;
+        Debug.Log("base xp: " + baseXp + ", level: " + (ulong) level + ", grantable xp: " + xp);
+        return xp;
 	}
 
 
