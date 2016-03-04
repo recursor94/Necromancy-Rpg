@@ -39,12 +39,32 @@ public class QuestEventHandler  {
         QuestVars.Add(varName, value);
     }
 
-    public static int getQuestInteger(string varName) {
+    public static int GetQuestInteger(string varName) {
 
         object value;
         QuestVars.TryGetValue(varName, out value);
 
         return (int) value;
       }
+
+    public static bool GetQuestBoolean(string varName) {
+        /*get specified boolean from the list of active quest variables
+        */
+
+        object value;
+        QuestVars.TryGetValue(varName, out value);
+        return (bool)value;
+    }
+
+    public static string GetQuestString(string varName) {
+        /*
+        get specified string from the list of active quest variables
+        */
+
+        object value;
+        QuestVars.TryGetValue(varName, out value);
+        return (string)value;
+
+    }
 
 }
