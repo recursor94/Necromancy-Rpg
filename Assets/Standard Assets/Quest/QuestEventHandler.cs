@@ -11,6 +11,7 @@ public class QuestEventHandler  {
 
 	private static List<Quest> ActiveQuests = new List<Quest>();
     private static Dictionary<string, object> QuestVars = new Dictionary<string, object>(); //dictionary containing every quest variable defined in quest scripts
+    private static List<ObjectiveCompleteEvent> ObjectiveUpdateEvents; //Keeps track of all of the active events. This should be removed from when finished
 
 	public static void AddActiveQuest(Quest q) {
 		ActiveQuests.Add (q);
@@ -66,5 +67,18 @@ public class QuestEventHandler  {
         return (string)value;
 
     }
+
+    public static ObjectiveCompleteEvent FindEventById(string id) {
+       foreach(ObjectiveCompleteEvent e in ObjectiveUpdateEvents) {
+            if (e.ObjectiveId.Equals(id)) {
+                ObjectiveCompleteEvent found = e;
+                ObjectiveUpdateEvents.Remove(e);
+
+                return found;
+            }
+        }
+        return null;
+    }
+
 
 }

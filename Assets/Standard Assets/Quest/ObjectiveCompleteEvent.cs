@@ -10,4 +10,10 @@ public abstract class ObjectiveCompleteEvent : GameEvent {
     public ObjectiveCompleteEvent(string objectiveId) {
         this.objectiveId = objectiveId;
     }
+
+    public string ObjectiveId {
+        get {
+            return objectiveId;
+        }
+    }
 }

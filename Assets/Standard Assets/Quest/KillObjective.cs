@@ -67,6 +67,6 @@ public sealed class KillObjective : QuestObjective  {
 	}
 
     protected override void OnUpdate() {
-       
+        KillObjectiveUpdateEvent e = new KillObjectiveUpdateEvent(Id, actorTargetId, killedCount);
     }
 }
