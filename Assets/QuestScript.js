@@ -9,6 +9,7 @@ class QuestScript {
     function QuestScript(quest:Quest) {
         this.quest = quest;
         this.currentStage = quest.Stage;
+        this.objectives = quest.QuestObjectives;
 
     }
     function Start () {

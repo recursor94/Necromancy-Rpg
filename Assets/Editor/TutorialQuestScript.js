@@ -9,7 +9,6 @@ class TutorialQuestScript extends QuestScript {
     var skeletonsSlain : int;
     function TutorialQuestScript(quest : KillQuest) {
         super(quest);
-        skeletonsSlain = 0;
 
     }
     function Start () {
