@@ -27,6 +27,10 @@ public class GatherObjective : QuestObjective
 			}
 		}
 	}
+
+    protected override void OnUpdate() {
+        
+    }
 }
 
 

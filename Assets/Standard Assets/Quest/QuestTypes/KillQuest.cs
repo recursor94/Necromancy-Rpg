@@ -23,7 +23,7 @@ public sealed class KillQuest : Quest
 
         int i = 0;
 		foreach(var killTarget in killTargetInformation) {
-			KillObjective objective = new KillObjective (id +"" + i,  killTarget.Key, killTarget.Value); //setup all objectives with appropriate kill target.
+			KillObjective objective = new KillObjective ("KillObjective" + killTarget.Key,  killTarget.Key, killTarget.Value); //setup all objectives with appropriate kill target.
 			questObjectives.Add (objective);
             i++;
 		}

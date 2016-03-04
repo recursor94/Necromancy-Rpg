@@ -58,6 +58,7 @@ public abstract class QuestObjective  {
 		isComplete = true;
 		Debug.Log ("Objective Complete!");
 	}
+    protected abstract void OnUpdate(); //method for controlling what happens when objective is updated but not completed.  EG.  an enemy is killed, but not all of the enemies required have been killed
     public string Id {
         get { return id; }
     }

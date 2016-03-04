@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 /*
  * quest objective for tracking whether npc was killed.
@@ -64,4 +65,8 @@ public sealed class KillObjective : QuestObjective  {
 			Debug.Log("Event is not death event");
 		}
 	}
+
+    protected override void OnUpdate() {
+       
+    }
 }
