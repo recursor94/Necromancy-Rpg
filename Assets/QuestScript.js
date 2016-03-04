@@ -1,9 +1,10 @@
 ﻿#pragma strict
-
+import System.Collections.Generic; 
 class QuestScript {
 
-    var quest : Quest;
-    var currentStage : int;
+    protected var quest : Quest;
+    protected var currentStage : int;
+    protected var objectives : List.<QuestObjective>;
 
     function QuestScript(quest:Quest) {
         this.quest = quest;
@@ -18,11 +19,11 @@ class QuestScript {
 
         if(currentStage != quest.Stage) {
             currentStage = quest.Stage;
-            OnStagechange(quest.Stage);
+            OnStageChange(quest.Stage);
         }
 
     }
-    function OnStagechange(stage:int) {
+    function OnStageChange(stage:int) {
 
     }
 

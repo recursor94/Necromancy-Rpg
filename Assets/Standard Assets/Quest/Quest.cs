@@ -92,6 +92,10 @@ public abstract class Quest {
 
 	}
 
+    public List<QuestObjective> QuestObjectives {
+        get { return questObjectives; }
+    }
+
 	public override string ToString ()
 	{
 		return "Name: " + name + "\tNumber of Conversations: " + conversations.Count + "\t Number of objectives: "

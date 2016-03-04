@@ -1,9 +1,15 @@
 ﻿#pragma strict
 
 class TutorialQuestScript extends QuestScript {
-
-    function TutorialQuestScript(quest : Quest) {
+    /*
+    Quest script for logic of tutorial quest.
+    tutorial quest will have 3 stages and 
+    have variables Representing all of the mobs that need to be killed.
+    */
+    var skeletonsSlain : int;
+    function TutorialQuestScript(quest : KillQuest) {
         super(quest);
+        skeletonsSlain = 0;
 
     }
     function Start () {
@@ -11,6 +17,13 @@ class TutorialQuestScript extends QuestScript {
     }
 
     function Update () {
+        Debug.Log(currentStage);
+        super.Update();
         
     }
+
+    function OnStageChange(stage: int) {
+
+    }
+
 }
