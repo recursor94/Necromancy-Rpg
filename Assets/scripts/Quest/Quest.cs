@@ -16,6 +16,7 @@ public abstract class Quest {
 	protected List<Conversation> conversations;
 	protected string name; //name of quest
 	protected bool isComplete;
+    protected int stage; //keeps track of quest progress, triggering different events per stage
 
 	protected Quest(string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
 
@@ -23,6 +24,7 @@ public abstract class Quest {
 		this.participant = particpant;
 		this.questObjectives = questObjectives;
 		this.conversations = conversations;
+        stage = 0;
 	}
 
 	protected Quest(string name, Actor participant) {
@@ -30,6 +32,7 @@ public abstract class Quest {
 		this.participant = participant;
 		this.questObjectives = new List<QuestObjective> ();
 		this.conversations = new List<Conversation> ();
+        stage = 0;
 	}
 
 	public bool IsComplete() {
@@ -74,6 +77,11 @@ public abstract class Quest {
 		}
 	} 
 
+    public int Stage
+    {
+        get { return stage; }
+        set { stage = value; }
+    }
 	public void ComputeComplete() {
 		//computes whether the quest is complete
 		Debug.Log ("Computing if quest is complete");
