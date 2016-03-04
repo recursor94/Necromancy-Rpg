@@ -10,9 +10,11 @@ public abstract class QuestObjective  {
 
 	private bool isComplete;
 	private string objectiveText;
+    private string id;
 
-	public QuestObjective() {
+	public QuestObjective(string id) {
 		isComplete = false;
+        this.id = id;
 
 	}
 	public bool IsComplete {
@@ -56,5 +58,8 @@ public abstract class QuestObjective  {
 		isComplete = true;
 		Debug.Log ("Objective Complete!");
 	}
+    public string Id {
+        get { return id; }
+    }
 
 }

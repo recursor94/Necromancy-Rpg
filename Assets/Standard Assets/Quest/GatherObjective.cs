@@ -7,7 +7,7 @@ public class GatherObjective : QuestObjective
 	private GameItem requiredItem; //the item required to be gathered for the objective to be complete
 	private int itemCount; //the number of the item that must be gathered for the objective to be complete.
 
-	public GatherObjective(GameItem requiredItem, int itemCount) {
+	public GatherObjective(string id, GameItem requiredItem, int itemCount) : base(id) {
 		this.requiredItem = requiredItem;
 		this.itemCount = itemCount;
 	}

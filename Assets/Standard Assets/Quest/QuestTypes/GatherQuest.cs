@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class GatherQuest : Quest
 	{
 
-	public GatherQuest(string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) : base(name, particpant, questObjectives, conversations){
+	public GatherQuest(string id, string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) : base(id, name, particpant, questObjectives, conversations){
 	}
 
 

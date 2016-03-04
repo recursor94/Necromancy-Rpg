@@ -17,22 +17,25 @@ public abstract class Quest {
 	protected string name; //name of quest
 	protected bool isComplete;
     protected int stage; //keeps track of quest progress, triggering different events per stage
+    protected string id;
 
-	protected Quest(string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
+	protected Quest(string id, string name, Actor particpant, List<QuestObjective> questObjectives, List<Conversation> conversations) {
 
 		this.name = name;
 		this.participant = particpant;
 		this.questObjectives = questObjectives;
 		this.conversations = conversations;
+        this.id = id;
         stage = 0;
 	}
 
-	protected Quest(string name, Actor participant) {
+	protected Quest(string id, string name, Actor participant) {
 		this.name = name;
 		this.participant = participant;
 		this.questObjectives = new List<QuestObjective> ();
 		this.conversations = new List<Conversation> ();
         stage = 0;
+        this.id = id;
 	}
 
 	public bool IsComplete() {

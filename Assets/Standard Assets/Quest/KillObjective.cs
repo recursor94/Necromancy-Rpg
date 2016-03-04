@@ -13,14 +13,14 @@ public sealed class KillObjective : QuestObjective  {
 	private int killedCount;
 
 
-	public KillObjective(string actorTargetId) : base() {
+	public KillObjective(string objectiveId, string actorTargetId) : base(objectiveId) {
 
 		this.actorTargetId = actorTargetId;
 		this.requiredKillCount = 1; //by default only one will probably exist/need to be killed
 		this.ObjectiveText = actorTargetId;
 	}
 
-	public KillObjective(string actorTargetId, int requiredKillCount) {
+	public KillObjective(string objectiveId, string actorTargetId, int requiredKillCount) :base (objectiveId) {
 
 		//Constructor called if there are more than one of the target actor
 		//existing in the game world, and more than one needs to be killed
