@@ -7,7 +7,7 @@ class TutorialQuestScript extends QuestScript {
     have variables Representing all of the mobs that need to be killed.
     */
     var skeletonsSlain : int;
-    function TutorialQuestScript(quest : KillQuest) {
+    function TutorialQuestScript(quest: KillQuest) {
         super(quest);
 
     }

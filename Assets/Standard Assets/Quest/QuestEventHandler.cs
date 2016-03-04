@@ -10,6 +10,7 @@ public class QuestEventHandler  {
 
 
 	private static List<Quest> ActiveQuests = new List<Quest>();
+    private static Dictionary<string, object> QuestVars = new Dictionary<string, object>(); //dictionary containing every quest variable defined in quest scripts
 
 	public static void AddActiveQuest(Quest q) {
 		ActiveQuests.Add (q);
@@ -28,5 +29,22 @@ public class QuestEventHandler  {
 			quest.ComputeComplete ();
 		}
 	}
+
+    public static void AddQuestVar(string varName, object value) {
+
+        /*
+        Method called by quest scripts to add a variable and it's value to the dictionary of 
+        active quest variables
+        */
+        QuestVars.Add(varName, value);
+    }
+
+    public static int getQuestInteger(string varName) {
+
+        object value;
+        QuestVars.TryGetValue(varName, out value);
+
+        return (int) value;
+      }
 
 }
