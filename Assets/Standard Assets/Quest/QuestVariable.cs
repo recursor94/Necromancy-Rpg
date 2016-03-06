@@ -21,4 +21,8 @@ public class QuestVariable <T>  {
             this.value = value;
         }
     }
+
+    public string VarName {
+        get { return varName; }
+    }
 }
