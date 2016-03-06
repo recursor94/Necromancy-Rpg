@@ -26,7 +26,7 @@ public class QuestEventHandler  {
 		 */
 		Debug.Log ("Number of Active Quests: " + ActiveQuests.Count);
 		foreach(Quest quest in ActiveQuests) {
-			quest.SendEvent (e);
+            quest.SendEvent(e);
 			quest.ComputeComplete ();
 		}
 	}
