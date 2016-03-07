@@ -10,6 +10,9 @@ public class TestLua : MonoBehaviour {
         luaState["x"] = 3;
 
         Debug.Log(luaState["x"]);
+
+        luaState.DoFile("Assets/Standard Assets/luascripts/test.lua");
+        Debug.Log(luaState["b"]);
 	
 	}
 	
