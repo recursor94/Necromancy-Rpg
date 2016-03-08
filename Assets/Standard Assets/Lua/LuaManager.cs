@@ -29,4 +29,17 @@ public sealed class LuaManager  {
         }
     }
     //now for the instance methods.  These may not be thread safe and shuld be modified later.
+
+    public void loadScript(string fileName) {
+        /*
+        Loads the script file into the lua envirionment
+        */
+        _LuaEnvironment.DoFile(fileName);
+
+    }
+    public void AddChunk(string chunkString) {
+        /* read lua code chunk into interpreter
+        */
+        _LuaEnvironment.DoString(chunkString);
+    }
 }
