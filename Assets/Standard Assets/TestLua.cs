@@ -3,7 +3,7 @@ using System.Collections;
 using NLua;
 
 public class TestLua : MonoBehaviour {
-    Lua luaState; 
+    Lua luaState;
 	// Use this for initialization
 	void Start () {
         luaState = new Lua();
@@ -12,7 +12,10 @@ public class TestLua : MonoBehaviour {
         Debug.Log(luaState["x"]);
 
         luaState.DoFile("Assets/Standard Assets/luascripts/test.lua");
+        
         Debug.Log(luaState["b"]);
+        LuaManager.Instance.LoadScript("Assets/Standard Assets/Lua Scripts/global.lua");
+        LuaManager.Instance.RunChunk("test()");
 	
 	}
 	

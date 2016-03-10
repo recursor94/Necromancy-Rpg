@@ -1,0 +1,3 @@
+function test()
+	Debug.Log("Test")
+end

@@ -15,6 +15,7 @@ public sealed class LuaManager  {
 	
     private LuaManager() {
         this._LuaEnvironment = new Lua();
+        _LuaEnvironment.LoadCLRPackage();
     } //Empty default contructor to prevent initialization outside of static
 
     public static LuaManager Instance {
@@ -30,14 +31,14 @@ public sealed class LuaManager  {
     }
     //now for the instance methods.  These may not be thread safe and shuld be modified later.
 
-    public void loadScript(string fileName) {
+    public void LoadScript(string fileName) {
         /*
         Loads the script file into the lua envirionment
         */
         _LuaEnvironment.DoFile(fileName);
 
     }
-    public void AddChunk(string chunkString) {
+    public void RunChunk(string chunkString) {
         /* read lua code chunk into interpreter
         */
         _LuaEnvironment.DoString(chunkString);
