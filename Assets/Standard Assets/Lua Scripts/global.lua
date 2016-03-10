@@ -2,6 +2,8 @@ import 'System'
 import 'UnityEngine'
 import 'Assembly-CSharp'
 
+item = GameItem()
+Debug.Log(LuaManager.Instance)
 --require 'class' Doesn't work.
 function test()
 	Debug.Log("Test")
@@ -21,8 +23,10 @@ function GameScript:new(o)
 	return o
 end
 function GameScript:onStart()
+	Debug.Log("Starting")
 end
 function GameScript:onUpdate()
+	Debug.Log("Updating")
 end
 --End game script prototype
 --
@@ -46,3 +50,6 @@ end
 
 function QuestScript:onStageChange(stage)
 end
+
+testQuestScript = QuestScript:new(KillQuest("test01", "Test Quest", PlayerScript.GetActor(), null))
+testQuestScript.onStart()

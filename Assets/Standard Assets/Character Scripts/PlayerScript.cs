@@ -36,4 +36,7 @@ public class PlayerScript : MonoBehaviour {
 
 
 	}
+    public static Actor GetActor() {
+        return Player;
+    }
 }
