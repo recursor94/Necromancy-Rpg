@@ -43,4 +43,10 @@ public sealed class LuaManager  {
         */
         _LuaEnvironment.DoString(chunkString);
     }
+
+    public object [] CallFunction(string function, params object[] args) {
+        var scriptFunction = _LuaEnvironment[function] as LuaFunction;
+        object [] result = scriptFunction.Call(args);
+        return result;
+    }
 }
