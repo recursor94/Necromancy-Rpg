@@ -1,0 +1,2 @@
+-- Define Tutorial quest 
+TutorialQuest = QuestScript.new("test") 
