@@ -56,7 +56,11 @@ GameScript = {}
 GameScript.__index = GameScript
 --Constructor:
 function GameScript.new()
-	local instance = {}
+	local instance = {
+	_onStartFunction,
+	_onUpdateFunction,
+	_onFinishFunction,
+	}
 	--set Gamescript as prototype for new instance:
 	setmetatable(instance, GameScript)
 	return instance
@@ -65,14 +69,17 @@ end
 --method definitions:
 function GameScript:onStart()
 	Debug.Log("Starting lua script")
+	_onStartFunction()
 end
 
 function GameScript:onUpdate()
 	Debug.Log("Lua script finished")
+	_onUpdateFunction()
 end
 
 function GameScript:onFinish()
 	Debug.Log("Lua script finished")
+	_onFinishFunction()
 end
 
 
@@ -103,5 +110,8 @@ function QuestScript:onUpdate()
 		self.OnstageChange(self.quest.stage)
 	end
 	GameScript:onUpdate(self)
+end
+function QuestScript:createKillQuest(killQuest)
+	return quest.new(killQuest)
 end
 

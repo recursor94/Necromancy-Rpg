@@ -1,2 +1,2 @@
--- Define Tutorial quest 
-TutorialQuest = QuestScript.new("test") 
+-- Define Tutorial quest script
+tutorialQuestScript = QuestScript.new(quest)
