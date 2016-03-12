@@ -128,9 +128,10 @@ end
 function QuestScript:onStart()
 end
 function QuestScript:onUpdate()
-	if quest.Stage > self.currentStage then
-		self.currentStage = quest.Stage
-		onStageChange(quest.Stage)
+	Debug.Log("Quest Stage: " .. self.quest.Stage)	
+	if self.quest.Stage > self.currentStage then
+		self.currentStage = self.quest.Stage
+		onStageChange(self.quest.Stage)
 	end
 end
 function QuestScript:onFinish()

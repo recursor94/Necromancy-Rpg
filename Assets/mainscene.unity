@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 75822792}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.99999666
+  m_Size: 0.99998206
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2751,25 +2751,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdf398b5f434dad48b111a068f11d25c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2092259255 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 177714, guid: 07527e494509155408775634ad1bd3bd, type: 2}
-  m_PrefabInternal: {fileID: 1885063001}
---- !u!114 &2092259256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2092259255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23ec225bfeaf6d34bbe80cda9d679c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetId: 
-  name: 
-  targetIds: []
-  killCounts: 
-  convNpcs: []
-  conversationText: []
-  questId: 
