@@ -5,7 +5,7 @@ using NLua;
 public class TestLua : MonoBehaviour {
     Lua luaState;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         luaState = new Lua();
         luaState["x"] = 3;
 

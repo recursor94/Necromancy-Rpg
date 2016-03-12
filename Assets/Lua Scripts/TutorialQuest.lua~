@@ -19,6 +19,9 @@
 TutorialQuestScript = {}
 function TutorialQuestScript:construct(quest)
 	TutorialQuestScript = QuestScript.construct({quest})
+	TutorialQuestScript.mt = {}
+	TutorialQuestScript.mt.__index = QuestScript
+	return 0
 end
 TutorialQuestScript.skeletonsKilled = 0
 function TutorialQuestScript:onUpdate()

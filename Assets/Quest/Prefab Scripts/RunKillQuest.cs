@@ -34,12 +34,13 @@ public class RunKillQuest : MonoBehaviour {
 		quest.Conversations.AddRange (conversations);
 		Debug.Log ("Starting Kill Quest: " + quest.ToString ());
 		QuestEventHandler.AddActiveQuest (quest);
-        LuaManager.Instance.CallFunction(luaScriptName + ":construct", quest);
+        LuaManager.Instance.CallFunction(luaScriptName + ".construct", LuaManager.Instance.GetLuaObject(luaScriptName), quest);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        LuaManager.Instance.RunChunk(luaScriptName + ":onUpdate()");
+        //doesn't work: LuaManager.Instance.CallFunction(luaScriptName + ".onUpdate");
+        LuaManager.Instance.CallFunction(luaScriptName + ".onUpdate", LuaManager.Instance.GetLuaObject(luaScriptName));
 	}
 }

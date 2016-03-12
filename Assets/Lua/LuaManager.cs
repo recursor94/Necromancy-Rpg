@@ -44,8 +44,16 @@ public sealed class LuaManager  {
         _LuaEnvironment.DoString(chunkString);
     }
 
+    public object GetLuaObject(string index) {
+        /*
+        return lua value at that index
+        */
+        return _LuaEnvironment[index];
+    }
+
     public object [] CallFunction(string function, params object[] args) {
         var scriptFunction = _LuaEnvironment[function] as LuaFunction;
+        Debug.Log("passed string "+ function + " " + "Calling script function: " + scriptFunction);
         object [] result = scriptFunction.Call(args);
         return result;
     }

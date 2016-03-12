@@ -19,9 +19,10 @@
 TutorialQuestScript = {}
 function TutorialQuestScript:construct(quest)
 	TutorialQuestScript = QuestScript.construct({quest})
+	TutorialQuestScript.mt = {}
+	TutorialQuestScript.mt.__index = QuestScript
 end
 TutorialQuestScript.skeletonsKilled = 0
 function TutorialQuestScript:onUpdate()
 	Debug.Log("Skeletons Killed: " .. self.skeletonsKilled)
-	return 0
 end
