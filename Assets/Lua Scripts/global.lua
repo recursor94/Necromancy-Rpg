@@ -51,66 +51,85 @@ end
 --function QuestScript:onStageChange(stage)
 --end
 --
---Prototype for Game Script:
-GameScript = {}
-GameScript.__index = GameScript
---Constructor:
-function GameScript.new(scriptTable)
-	local instance = {
-	_scriptTable = scriptTable or {},
-	_onStartFunction = _scriptTable["functTable"]["onStart"] ,
-	_onUpdateFunction = _scriptTable["functTable"]["onUpdate"] ,
-	_onFinishFunction = _scriptTable["functTable"]["onFinish"] ,
-	_varTable = _scriptTable["varTable"] or nil
-	}
-	--set Gamescript as prototype for new instance:
-	setmetatable(instance, GameScript)
-	return instance
-end
-
---method definitions:
-function GameScript:onStart()
-	Debug.Log("Starting lua script")
-	_onStartFunction()
-end
-
-function GameScript:onUpdate()
-	Debug.Log("Lua script finished")
-	_onUpdateFunction()
-end
-
-function GameScript:onFinish()
-	Debug.Log("Lua script finished")
-	_onFinishFunction()
-end
-
-
---Quest Script class
+----Prototype for Game Script:
+--GameScript = {}
+--GameScript.__index = GameScript
+----Constructor:
+--function GameScript.new(scriptTable)
+--	local instance = {
+--	_scriptTable = scriptTable or {},
+--	_onStartFunction = _scriptTable["functTable"]["onStart"] ,
+--	_onUpdateFunction = _scriptTable["functTable"]["onUpdate"] ,
+--	_onFinishFunction = _scriptTable["functTable"]["onFinish"] ,
+--	_varTable = _scriptTable["varTable"] or nil
+--	}
+--	--set Gamescript as prototype for new instance:
+--	setmetatable(instance, GameScript)
+--	return instance
+--end
+--
+----method definitions:
+--function GameScript:onStart()
+--	Debug.Log("Starting lua script")
+--	_onStartFunction()
+--end
+--
+--function GameScript:onUpdate()
+--	Debug.Log("Lua script finished")
+--	_onUpdateFunction()
+--end
+--
+--function GameScript:onFinish()
+--	Debug.Log("Lua script finished")
+--	_onFinishFunction()
+--end
+--
+--
+----Quest Script class
+--QuestScript = {}
+----constructor
+--QuestScript.__index = QuestScript
+--
+--function QuestScript.new(quest, scriptTable)
+--	local instance = {
+--		_quest = quest,
+--		_currentStage = 0,
+--		GameScript.new(self, scriptTable)
+--	}
+--
+--	setmetatable(instance, QuestScript)
+--	return instance
+--end
+----make GameScript prototype for QuestScript
+--setmetatable(QuestScript, {__index = GameScript})
+--
+----instance methods
+--function QuestScript:onStageChange(stage)
+--	Debug.Log("Stage change detected, new stage is " .. stage)
+--end
+--function QuestScript:onUpdate()
+--	if not self._currentStage == self.quest.Stage then
+--		self._currentStage = quest.Stage
+--		self.OnstageChange(self.quest.Stage)
+--	end
+--	GameScript.onUpdate(self)
+--end
+--
 QuestScript = {}
---constructor
-QuestScript.__index = QuestScript
-
-function QuestScript.new(quest, scriptTable)
-	local instance = {
-		_quest = quest,
-		_currentStage = 0,
-		GameScript.new(self, scriptTable)
-	}
-
-	setmetatable(instance, QuestScript)
-	return instance
+QuestScript.prototype = {currentStage = 0}
+QuestScript.mt = {}
+function QuestScript.construct(object)
+	setmetatable(object, QuestScript.mt)
+	return object
 end
---make GameScript prototype for QuestScript
-setmetatable(QuestScript, {__index = GameScript})
-
---instance methods
-function QuestScript:onStageChange(stage)
-	Debug.Log("Stage change detected, new stage is " .. stage)
+QuestScript.mt.__index = function(table, key)
+	return QuestScript.prototype[key]
+end
+function QuestScript:onStart()
 end
 function QuestScript:onUpdate()
-	if not self._currentStage == self.quest.Stage then
-		self._currentStage = quest.Stage
-		self.OnstageChange(self.quest.Stage)
-	end
-	GameScript.onUpdate(self)
+end
+function QuestScript:onFinish()
+end
+function QuestScript:onStageChange(stage)
 end

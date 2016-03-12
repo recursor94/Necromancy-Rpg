@@ -17,13 +17,14 @@ public class TestLua : MonoBehaviour {
         LuaManager.Instance.LoadScript("Assets/Lua Scripts/global.lua");
         LuaManager.Instance.LoadScript("Assets/Lua Scripts/QuestScripts.lua");
         LuaManager.Instance.RunChunk("test()");
-        LuaManager.Instance.RunChunk("questsLoaded()");
+        //LuaManager.Instance.RunChunk("questsLoaded()");
         LuaManager.Instance.LoadScript("Assets/Lua Scripts/TutorialQuest.lua");
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        LuaManager.Instance.RunChunk("TutorialQuest:onUpdate()");
 	
 	}
 }
