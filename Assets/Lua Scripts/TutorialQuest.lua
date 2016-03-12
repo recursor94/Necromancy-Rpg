@@ -2,11 +2,11 @@
 
 scriptData = {
 
-	varTable = {skeletons = 0},
+	varTable = {skeletonsKilled = 0},
 
 	functTable =	{
 			onUpdate = function()
-				Debug.log("" .. varTable["skeltonsKilled"])
+				Debug.log("" .. varTable["skeletonsKilled"])
 			end,
 			onFinish = function()
 			end,
@@ -15,4 +15,4 @@ scriptData = {
 		},
 
 }
-
+--tutorialQuestScript = Quest.new(quest,scriptData)

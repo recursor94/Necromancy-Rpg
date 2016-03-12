@@ -57,9 +57,10 @@ GameScript.__index = GameScript
 --Constructor:
 function GameScript.new(scriptTable)
 	local instance = {
-	_onStartFunction = scriptTable["functTable"]["onStart"],
-	_onUpdateFunction = scriptTable["functTable"]["onUpdate"],
-	_onFinishFunction = scriptTable["functTable"]["onFinish"],
+	_scriptTable = scriptTable or {},
+	_onStartFunction = scriptTable["functTable"]["onStart"] ,
+	_onUpdateFunction = scriptTable["functTable"]["onUpdate"] ,
+	_onFinishFunction = scriptTable["functTable"]["onFinish"] ,
 	_varTable = scriptTable["varTable"] or nil
 	}
 	--set Gamescript as prototype for new instance:

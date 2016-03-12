@@ -15,5 +15,4 @@ scriptData = {
 		},
 
 }
-
-TutorialQuestScript = QuestScript.new(scriptData)
+--tutorialQuestScript = Quest.new(quest,scriptData)
