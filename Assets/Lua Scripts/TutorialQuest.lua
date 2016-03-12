@@ -23,4 +23,5 @@ end
 TutorialQuestScript.skeletonsKilled = 0
 function TutorialQuestScript:onUpdate()
 	Debug.Log("Skeletons Killed: " .. self.skeletonsKilled)
+	return 0
 end

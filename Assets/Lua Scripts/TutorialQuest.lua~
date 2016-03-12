@@ -17,7 +17,7 @@
 --}
 ----tutorialQuestScript = Quest.new(quest,scriptData)
 TutorialQuestScript = {}
-function initTutorialQuestScript(quest)
+function TutorialQuestScript:construct(quest)
 	TutorialQuestScript = QuestScript.construct({quest})
 end
 TutorialQuestScript.skeletonsKilled = 0

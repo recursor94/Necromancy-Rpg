@@ -5,7 +5,7 @@ public class Npc : MonoBehaviour {
 
 	// Use this for initialization
 	//class for representing this npcs data--including attached actor
-	public static Actor Actor = new TutorialQuestGiverActor(); //actor that npc is associated with
+	//public static Actor Actor = new TutorialQuestGiverActor(); //actor that npc is associated with
 	void Start () {
 //		Actor = new TutorialQuestGiverActor ();
 	

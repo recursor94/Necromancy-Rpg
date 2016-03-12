@@ -28,6 +28,7 @@ public abstract class Actor {
 	private string id;
 
 	protected Actor(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender) {
+        this.characterName = characterName;
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;
@@ -37,6 +38,7 @@ public abstract class Actor {
 		damageModifier = level;
 	}
 	protected Actor(List<CombatAbility> combatMoveSet, string characterName, int level, int healthCap, Gender gender, string id) {
+        this.characterName = characterName;
 		this.combatMoveSet = combatMoveSet;
 		this.level = level;
 		this.gender = gender;

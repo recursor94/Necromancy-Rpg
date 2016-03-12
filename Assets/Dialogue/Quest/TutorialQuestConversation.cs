@@ -5,17 +5,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class TutorialQuestConversation : Conversation {
+public class TutorialQuestConversation  {
 
-	private static string dialogueText = "There's zombies in that other room! " +
-	                                     "Go kill that nonsense for me.";
-	public TutorialQuestConversation() : base(dialogueText) {
+    private static string dialogueText = "There's zombies in that other room! " +
+                                         "Go kill that nonsense for me.";
+}
+	//public TutorialQuestConversation() : base(dialogueText) {
 
-		Actor TutorialNpc = new TutorialQuestGiverActor ();
-		base.addValidNpcId (TutorialNpc.Id);
-	}
+		//Actor TutorialNpc = new TutorialQuestGiverActor ();
+		///base.addValidNpcId (TutorialNpc.Id);
+	//}
 
-	protected void onEnd() {
+//	protected void onEnd() {
 
 		/*
 		 * should initiate 
@@ -26,6 +27,3 @@ public class TutorialQuestConversation : Conversation {
 //		Quest tutorialQuest = new TutorialQuest ();
 //		QuestManager.StartQuest(tutorialQuest);
 //		base.onEnd ();
-	}
-
-}

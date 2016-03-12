@@ -13,8 +13,8 @@ public class DialogueController : MonoBehaviour {
 		UICanvas.SetActive (false);
 	}
 	void Start () {
-		Canvas canvas = UICanvas.GetComponent <Canvas> ();
-		Camera camera = GameObject.Find ("Main Camera").GetComponent<Camera> ();
+		//Canvas canvas = UICanvas.GetComponent <Canvas> ();
+		//Camera camera = GameObject.Find ("Main Camera").GetComponent<Camera> ();
 		//Rect rect = canvas.pixelRect;
 		//rect.width = camera.pixelWidth;
 		
