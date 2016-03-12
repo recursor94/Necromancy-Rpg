@@ -116,7 +116,7 @@ end
 --end
 --
 QuestScript = {}
-QuestScript.prototype = {currentStage = 0}
+QuestScript.prototype = {quest = {}, currentStage = 0}
 QuestScript.mt = {}
 function QuestScript.construct(object)
 	setmetatable(object, QuestScript.mt)
@@ -128,6 +128,10 @@ end
 function QuestScript:onStart()
 end
 function QuestScript:onUpdate()
+	if quest.Stage > self.currentStage then
+		self.currentStage = quest.Stage
+		onStageChange(quest.Stage)
+	end
 end
 function QuestScript:onFinish()
 end

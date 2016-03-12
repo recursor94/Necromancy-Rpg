@@ -16,8 +16,11 @@
 --
 --}
 ----tutorialQuestScript = Quest.new(quest,scriptData)
-TutorialQuest = QuestScript.Construct({})
-TutorialQuest.skeletonsKilled = 0
-function TutorialQuest:onUpdate()
+TutorialQuestScript = {}
+function TutorialQuestScript:construct(quest)
+	TutorialQuestScript = QuestScript.construct({quest})
+end
+TutorialQuestScript.skeletonsKilled = 0
+function TutorialQuestScript:onUpdate()
 	Debug.Log("Skeletons Killed: " .. self.skeletonsKilled)
 end

@@ -24,7 +24,7 @@ public class TestLua : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        LuaManager.Instance.RunChunk("TutorialQuest:onUpdate()");
+        LuaManager.Instance.RunChunk("TutorialQuestScript:onUpdate()");
 	
 	}
 }
