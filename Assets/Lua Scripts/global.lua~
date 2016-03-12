@@ -55,11 +55,12 @@ end
 GameScript = {}
 GameScript.__index = GameScript
 --Constructor:
-function GameScript.new()
+function GameScript.new(scriptTable)
 	local instance = {
-	_onStartFunction,
-	_onUpdateFunction,
-	_onFinishFunction,
+	_onStartFunction = scriptTable["functTable"]["onStart"],
+	_onUpdateFunction = scriptTable["functTable"]["onUpdate"],
+	_onFinishFunction = scriptTable["functTable"]["onFinish"],
+	_varTable = scriptTable["varTable"] or nil
 	}
 	--set Gamescript as prototype for new instance:
 	setmetatable(instance, GameScript)
@@ -88,10 +89,11 @@ QuestScript = {}
 --constructor
 QuestScript.__index = QuestScript
 
-function QuestScript.new(quest)
+function QuestScript.new(quest, scriptTable)
 	local instance = {
 		_quest = quest,
-		_currentStage = quest.Stage
+		_currentStage = 0,
+		GameScript.new(self, scriptTable)
 	}
 
 	setmetatable(instance, QuestScript)
@@ -107,11 +109,7 @@ end
 function QuestScript:onUpdate()
 	if not self._currentStage == self.quest.Stage then
 		self._currentStage = quest.Stage
-		self.OnstageChange(self.quest.stage)
+		self.OnstageChange(self.quest.Stage)
 	end
-	GameScript:onUpdate(self)
+	GameScript.onUpdate(self)
 end
-function QuestScript:createKillQuest(killQuest)
-	return quest.new(killQuest)
-end
-
