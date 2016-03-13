@@ -2368,6 +2368,14 @@ Prefab:
       propertyPath: conversationText.Array.data[0]
       value: There are skeletons in the next room!  Kill that nonsense for me.
       objectReference: {fileID: 0}
+    - target: {fileID: 11499706, guid: 07527e494509155408775634ad1bd3bd, type: 2}
+      propertyPath: questName
+      value: Learning The Basics
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499706, guid: 07527e494509155408775634ad1bd3bd, type: 2}
+      propertyPath: luaScriptName
+      value: TutorialQuestScript
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07527e494509155408775634ad1bd3bd, type: 2}
   m_IsPrefabParent: 0
@@ -2446,7 +2454,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 75822792}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.99998206
+  m_Size: 0.99999666
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

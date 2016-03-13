@@ -8,7 +8,7 @@ public class ConversationTrigger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D otherObject) {
 
-		DialogueController.UICanvas.SetActive (true);
+		//DialogueController.UICanvas.SetActive (true);
 //		Actor actor = new TutorialQuestGiverActor();
 //		Debug.Log (actor.Id);
 //		Debug.Log (DialogueController.getValidConversation(actor.Id).DialogueText);
@@ -20,6 +20,6 @@ public class ConversationTrigger : MonoBehaviour {
 
 	}
 	void OnTriggerExit2D(Collider2D otherObject) {
-		DialogueController.UICanvas.SetActive (false);
+		//DialogueController.UICanvas.SetActive (false);
 	}
 }

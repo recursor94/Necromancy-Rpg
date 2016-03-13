@@ -9,8 +9,8 @@ public class DialogueController : MonoBehaviour {
 	public static GameObject UICanvas;
 	// Use this for initialization
 	void Awake () {
-		UICanvas = GameObject.Find ("DialogueCanvas");
-		UICanvas.SetActive (false);
+//		UICanvas = GameObject.Find ("DialogueCanvas");
+//		UICanvas.SetActive (false);
 	}
 	void Start () {
 		//Canvas canvas = UICanvas.GetComponent <Canvas> ();
