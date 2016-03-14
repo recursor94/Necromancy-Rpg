@@ -66,19 +66,20 @@ public class DialogueBoxController {
         dialogueTextUI.text += "" + c;
     }
 
-    private IEnumerator WriteLine(string line) {
-       foreach(char c in line) {
-            Debug.Log("Writing character: " + c);
-            WriteCharacter(c);
-            yield return new WaitForSeconds(ScrollSpeed);
-        }
+   
 
-    }
-
-    public void WriteContent(string[] lines) {
+    private IEnumerator WriteContent(string[] lines) {
         foreach(string line in lines) {
             Debug.Log("Line: " +  line);
-            _script.StartCoroutine(WriteLine(line));
+            //GameManager.Instance.StartCoroutine(WriteLine(line));
+            foreach(char c in line) {
+                WriteCharacter(c);
+                yield return new WaitForSeconds(ScrollSpeed);
+            }
         }
+    }
+    public void writeLines(string [] lines) {
+        GameManager.Instance.StartCoroutine(WriteContent(lines));
+
     }
 }
