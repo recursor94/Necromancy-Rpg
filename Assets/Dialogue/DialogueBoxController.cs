@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class DialogueBoxController {
 
     private static volatile DialogueBoxController _instance;
     private static object _syncRoot = new object();
 
-    private double _scrollSpeed; //represents how quickly the text scrolls
+    private float _scrollSpeed; //represents how quickly the text scrolls
     private string[] _lines;  //text lines to be fed to dialogue box
+    private Text dialogueTextUI;
+    private MonoBehaviour _script;
+
     private enum WritingState {
         InActive,
         writingLine,
@@ -18,8 +22,10 @@ public class DialogueBoxController {
     private WritingState _currentState;
 	
    private DialogueBoxController() {
-        this.ScrollSpeed = 1f;
+        this.ScrollSpeed = .1f;
         this.CurrentState = WritingState.InActive;
+        dialogueTextUI = GameObject.Find("DialogueText").GetComponent<Text>();
+        _script = new MonoBehaviour();
 
     }
    
@@ -37,7 +43,7 @@ public class DialogueBoxController {
         }
     }
 
-    public double ScrollSpeed {
+    public float ScrollSpeed {
         get {
             return _scrollSpeed;
         }
@@ -54,6 +60,24 @@ public class DialogueBoxController {
 
         set {
             _currentState = value;
+        }
+    }
+
+    private void WriteCharacter(char c) {
+        dialogueTextUI.text += "" + c;
+    }
+
+    private IEnumerator WriteLine(string line) {
+       foreach(char c in line) {
+            WriteCharacter(c);
+            yield return new WaitForSeconds(ScrollSpeed);
+        }
+
+    }
+
+    public void WriteContent(string[] lines) {
+        foreach(string line in lines) {
+            _script.StartCoroutine(WriteLine(line));
         }
     }
 }
