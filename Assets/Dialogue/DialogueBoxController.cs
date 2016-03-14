@@ -8,7 +8,6 @@ public class DialogueBoxController {
     private static object _syncRoot = new object();
 
     private float _scrollSpeed; //represents how quickly the text scrolls
-    private string[] _lines;  //text lines to be fed to dialogue box
     private Text dialogueTextUI;
     private MonoBehaviour _script;
 
@@ -69,6 +68,7 @@ public class DialogueBoxController {
 
     private IEnumerator WriteLine(string line) {
        foreach(char c in line) {
+            Debug.Log("Writing character: " + c);
             WriteCharacter(c);
             yield return new WaitForSeconds(ScrollSpeed);
         }
@@ -77,6 +77,7 @@ public class DialogueBoxController {
 
     public void WriteContent(string[] lines) {
         foreach(string line in lines) {
+            Debug.Log("Line: " +  line);
             _script.StartCoroutine(WriteLine(line));
         }
     }
