@@ -21,7 +21,7 @@ public class DialogueBoxController {
     private WritingState _currentState;
 	
    private DialogueBoxController() {
-        this.ScrollSpeed = .1f;
+        this.ScrollSpeed = .05f;
         this.CurrentState = WritingState.InActive;
         dialogueTextUI = GameObject.Find("DialogueText").GetComponent<Text>();
         _script = new MonoBehaviour();
