@@ -9,13 +9,13 @@ public class DialogueBoxController {
 
     private float _scrollSpeed; //represents how quickly the text scrolls
     private Text dialogueTextUI;
-    private MonoBehaviour _script;
 
     private enum WritingState {
         InActive,
         writingLine,
         FinishedLine,
-        FinishedAll
+        FinishedAll,
+        Interrupted
 
     }
     private WritingState _currentState;
@@ -24,7 +24,6 @@ public class DialogueBoxController {
         this.ScrollSpeed = .05f;
         this.CurrentState = WritingState.InActive;
         dialogueTextUI = GameObject.Find("DialogueText").GetComponent<Text>();
-        _script = new MonoBehaviour();
 
     }
    
@@ -73,6 +72,10 @@ public class DialogueBoxController {
             Debug.Log("Line: " +  line);
             //GameManager.Instance.StartCoroutine(WriteLine(line));
             foreach(char c in line) {
+                if(CurrentState == WritingState.Interrupted) {
+                    line.Substring(line.IndexOf(c)); //If the scrolling was interrupted (eg by player hitting next before line finished scrolling)  stop scrolling and output the rest of the contents of the line immediately
+                    yield break;
+                }
                 WriteCharacter(c);
                 yield return new WaitForSeconds(ScrollSpeed);
             }
