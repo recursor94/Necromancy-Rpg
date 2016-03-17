@@ -26,22 +26,43 @@ public class EnemyMovement : MonoBehaviour {
     public void MoveRight() {
         Vector2 movementVector = new Vector2(1f, 0f);
         _rigidBody.MovePosition(_rigidBody.position + movementVector * Time.deltaTime);
-        _animator.SetBool("isWalking", true);
-        _animator.SetFloat("movement_x", movementVector.x);
+        StartHorizontalAnimation(movementVector);
         Debug.Log("X Position: " + transform.position.x);
     }
     public void MoveLeft() {
         Vector2 movementVector = new Vector2(-1f, 0f);
         _rigidBody.MovePosition(_rigidBody.position + movementVector * Time.deltaTime);
-        _animator.SetBool("isWalking", true);
-        _animator.SetFloat("movement_x", movementVector.x);
+        StartHorizontalAnimation(movementVector);
+      
 
+    }
+    public void MoveUp() {
+        Vector2 movementVector = new Vector2(0f, 1f);
+        _rigidBody.MovePosition(_rigidBody.position + movementVector * Time.deltaTime);
+        StartVerticalAnimation(movementVector);
+
+    }
+    public void MoveDown() {
+        Vector2 movementVector = new Vector2(0f, -1f);
+        _rigidBody.MovePosition(_rigidBody.position + movementVector * Time.deltaTime);
+        StartVerticalAnimation(movementVector);
     }
     public void StopMovement() {
         /*Stop skeleton's movement and return to the idle state.
         */
+        stopMovingAnimation();
+    }
+    public void StartHorizontalAnimation(Vector2 movementVector) {
+        _animator.SetBool("isWalking", true);
+        _animator.SetFloat("movement_x", movementVector.x);
+
+    }
+    public void StartVerticalAnimation(Vector2 movementVector) {
+        _animator.SetBool("isWalking", true);
+        _animator.SetFloat("movement_y", movementVector.y);
+    }
+    public void stopMovingAnimation() {
         _animator.SetBool("isWalking", false);
     }
-
     
 }

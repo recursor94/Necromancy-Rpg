@@ -1788,6 +1788,18 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 180450, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
   m_PrefabInternal: {fileID: 1128130510}
+--- !u!114 &1520957700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520957699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93828189b88f4b418d903187b73622f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldOfViewAngle: 110
 --- !u!50 &1520957706
 Rigidbody2D:
   serializedVersion: 2
@@ -2589,7 +2601,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 75822792}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999795
+  m_Size: 0.9999835
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
