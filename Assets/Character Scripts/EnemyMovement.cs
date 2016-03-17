@@ -16,13 +16,35 @@ public class EnemyMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        if(_rigidBody.position.x < 290) {
+        /* if(_rigidBody.position.x < 290) {
 
             MoveRight();
            
         }
-        StopMovement();
+        else {
+            StopMovement();
+        }*/
+        MoveUp();
 	}
+    public void MoveUpRight() {
+        /* move diagonol up and right
+        */
+        MoveUp();
+        MoveRight();
+    }
+    public void UpLeft() {
+        MoveUp();
+        MoveLeft();
+    }
+    public void MoveDownRight() {
+        MoveDown();
+        MoveRight();
+
+    }
+    public void MoveDownLeft() {
+        MoveDown();
+        MoveLeft();
+    }
     public void MoveRight() {
         Vector2 movementVector = new Vector2(1f, 0f);
         _rigidBody.MovePosition(_rigidBody.position + movementVector * Time.deltaTime);
