@@ -66,23 +66,38 @@ public class DialogueBoxController {
     }
 
    
+    private void WriteWholeLine(string line) {
+        dialogueTextUI.text += line; //write out whole line to dialogue UI rather than character by character
+
+    }
 
     private IEnumerator WriteContent(string[] lines) {
         foreach(string line in lines) {
             Debug.Log("Line: " +  line);
             //GameManager.Instance.StartCoroutine(WriteLine(line));
+            int index = 0; //keep track of index in case interrupted
             foreach(char c in line) {
                 if(CurrentState == WritingState.Interrupted) {
-                    line.Substring(line.IndexOf(c)); //If the scrolling was interrupted (eg by player hitting next before line finished scrolling)  stop scrolling and output the rest of the contents of the line immediately
-                    yield break;
+                    string output = line.Substring(index + 1); //If the scrolling was interrupted (eg by player hitting next before line finished scrolling)  stop scrolling and output the rest of the contents of the line immediately
+                    WriteWholeLine(line);
+                    CurrentState = WritingState.FinishedLine;
+                    break;
                 }
                 WriteCharacter(c);
+                index++;
                 yield return new WaitForSeconds(ScrollSpeed);
             }
         }
     }
-    public void writeLines(string [] lines) {
+    public void WriteLines(string [] lines) {
         GameManager.Instance.StartCoroutine(WriteContent(lines));
 
+    }
+
+    public void interrupt() {
+        /*
+        Interrupt dialogue scrolling by setting current state to interrupted
+        */
+        CurrentState = WritingState.Interrupted;
     }
 }

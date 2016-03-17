@@ -1418,11 +1418,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456066, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 287.164
+      value: 286.534
       objectReference: {fileID: 0}
     - target: {fileID: 456066, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -609.187
+      value: -608.935
       objectReference: {fileID: 0}
     - target: {fileID: 456066, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1475,6 +1475,10 @@ Prefab:
     - target: {fileID: 11471626, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
       propertyPath: baseXp
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419120, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
+      propertyPath: speed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
@@ -1780,6 +1784,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!1 &1520957699 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 180450, guid: afe8a971b5d59d944bf6edc1457d5742, type: 2}
+  m_PrefabInternal: {fileID: 1128130510}
+--- !u!50 &1520957706
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520957699}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1719734076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2271,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855114010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 5.57, z: 0}
+  m_LocalPosition: {x: 0.201, y: 5.817, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4514659}
@@ -2564,7 +2589,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 75822792}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999835
+  m_Size: 0.9999795
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
