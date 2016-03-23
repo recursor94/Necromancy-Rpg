@@ -2615,7 +2615,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 75822792}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999795
+  m_Size: 0.9999835
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2747,7 +2747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 418504, guid: 47fad7bc8cf73624a8cca4d7f31ed72a, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 11470638, guid: 47fad7bc8cf73624a8cca4d7f31ed72a, type: 2}
       propertyPath: healthCap
@@ -2756,6 +2756,10 @@ Prefab:
     - target: {fileID: 11470638, guid: 47fad7bc8cf73624a8cca4d7f31ed72a, type: 2}
       propertyPath: level
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155292, guid: 47fad7bc8cf73624a8cca4d7f31ed72a, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47fad7bc8cf73624a8cca4d7f31ed72a, type: 2}
