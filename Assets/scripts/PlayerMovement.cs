@@ -49,6 +49,10 @@ public class PlayerMovement : MonoBehaviour, IPauseable {
 
     public void OnPause() {
         isPaused = true;
-        Anim.SetBool("is_walking", false);
+        Anim.SetBool("is_walking", false); //set player's sprite back to idle state when paused
+    }
+
+    public void OnResume() {
+        isPaused = false;
     }
 }

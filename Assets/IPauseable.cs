@@ -8,4 +8,5 @@ using System.Collections;
 public interface IPauseable {
 
     void OnPause();
+    void OnResume();
 }
