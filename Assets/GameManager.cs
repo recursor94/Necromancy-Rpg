@@ -21,4 +21,13 @@ public class GameManager : MonoBehaviour {
     void Update () {
 	
 	}
+    public void pause() {
+        MonoBehaviour [] scripts = GameObject.FindObjectsOfType(typeof(MonoBehaviour)) as MonoBehaviour[];
+        foreach (MonoBehaviour script in scripts) {
+            if(script is IPauseable) {
+                IPauseable pauseableScript = (IPauseable)script;
+                pauseableScript.OnPause();
+            }
+        }
+    }
 }

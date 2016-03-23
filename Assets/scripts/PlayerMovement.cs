@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour, IPauseable {
 		
 	const int DEFAULT_SPEED = 1;
 
@@ -9,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
 	Rigidbody2D rBody;		
 	Animator Anim;
 	private int speed;
+    private bool isPaused;
 
 	// Use this for initialization
 
@@ -19,12 +21,16 @@ public class PlayerMovement : MonoBehaviour {
 		rBody = GetComponent<Rigidbody2D> ();
 		Anim = GetComponent<Animator> ();
 		speed = DEFAULT_SPEED;
+        isPaused = false;
 	}
 
 
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        if(isPaused) {
+            return;
+        }
 	
 		Vector2 movementVector = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw("Vertical"));
 		if (movementVector != Vector2.zero) {
@@ -40,4 +46,9 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		rBody.MovePosition (rBody.position + (movementVector * speed) * Time.deltaTime);
 	}
+
+    public void OnPause() {
+        isPaused = true;
+        Anim.SetBool("is_walking", false);
+    }
 }

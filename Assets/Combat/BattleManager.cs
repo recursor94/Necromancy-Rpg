@@ -29,7 +29,7 @@ using UnityEngine.UI;
 
 	public void StartBattle(Actor enemy) {
 
-
+        GameManager.Instance.pause();
 		Camera battleCamera = GameObject.Find ("Battle Camera").GetComponent<Camera> ();
 		ui = new BattleUI (player, battleCamera);
 		this.enemy = enemy;
