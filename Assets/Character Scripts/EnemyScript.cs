@@ -34,8 +34,13 @@ public class EnemyScript : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter2D() {
-		BattleManager battleManager = GameObject.Find ("Combat System").GetComponent<BattleManager> ();//I may need to change this, relying on this object to exist may be sloppy and I won't likely want more than one instance to be called
-		battleManager.StartBattle (actor);
+	void OnTriggerEnter2D(Collider2D trigger) {
+        //GameObject player = GameObject.Find("Player");
+        Debug.Log("Trigger: " + trigger.tag);
+        if(trigger.tag == "Player") {
+
+		    BattleManager battleManager = GameObject.Find ("Combat System").GetComponent<BattleManager> ();//I may need to change this, relying on this object to exist may be sloppy and I won't likely want more than one instance to be called
+            battleManager.StartBattle (actor);
+        }
 	}
 }

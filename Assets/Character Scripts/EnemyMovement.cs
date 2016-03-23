@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour {
         else {
             StopMovement();
         }*/
-        MoveUp();
+        //MoveUp();
 	}
     public void MoveUpRight() {
         /* move diagonol up and right
