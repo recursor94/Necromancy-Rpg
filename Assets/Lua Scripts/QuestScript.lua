@@ -19,17 +19,17 @@ end
 	
 	
 
-function QuestScript:OnStart()
+function QuestScript.prototype:OnStart()
 end
-function QuestScript:OnUpdate()
+function QuestScript.prototype:OnUpdate()
 end
-function QuestScript:OnFinish()
+function QuestScript.prototype:OnFinish()
 end
 
-function QuestScript:changeStage(stage)
+function QuestScript.prototype:changeStage(stage)
 	self.currentStage = stage
 	OnStageChange(self.currentStage)
 end
 
-function QuestScript:OnStageChange(stage)
+function QuestScript.prototype:OnStageChange(stage)
 end

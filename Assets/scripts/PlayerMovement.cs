@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour, IPauseable {
 
 
 	Rigidbody2D rBody;		
-	Animator Anim;
+	Animator animator;
 	private int speed;
     private bool isPaused;
 
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour, IPauseable {
 			
 
 		rBody = GetComponent<Rigidbody2D> ();
-		Anim = GetComponent<Animator> ();
+		animator = GetComponent<Animator> ();
 		speed = DEFAULT_SPEED;
         isPaused = false;
 	}
@@ -34,14 +34,14 @@ public class PlayerMovement : MonoBehaviour, IPauseable {
 	
 		Vector2 movementVector = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw("Vertical"));
 		if (movementVector != Vector2.zero) {
-			Anim.SetBool ("is_walking", true);
-			Anim.SetFloat ("input_x", movementVector.x);
-			Anim.SetFloat ("input_y", movementVector.y);
+			animator.SetBool ("is_walking", true);
+			animator.SetFloat ("input_x", movementVector.x);
+			animator.SetFloat ("input_y", movementVector.y);
 			
 	}
 		else {
 
-			Anim.SetBool("is_walking", false);
+			animator.SetBool("is_walking", false);
 
 		}
 		rBody.MovePosition (rBody.position + (movementVector * speed) * Time.deltaTime);
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour, IPauseable {
 
     public void OnPause() {
         isPaused = true;
-        Anim.SetBool("is_walking", false); //set player's sprite back to idle state when paused
+        animator.SetBool("is_walking", false); //set player's sprite back to idle state when paused
     }
 
     public void OnResume() {
