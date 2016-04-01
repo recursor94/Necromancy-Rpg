@@ -9,8 +9,12 @@ local function setAsIndex(metaTable)
 	--set this table as the parent (meta tables index) of the child quest script
 	metaTable.__index = QuestScript.prototype
 end
+function QuestScript:init(quest)
+    --public method for actually initializing quest script
+    return makeScript(self, quest)
+end
 
-function QuestScript:makeScript(object, quest)
+local function makeScript(object, quest)
 	--make script child of quest script
 	metaTable = {}
 	setAsIndex(metaTable)
