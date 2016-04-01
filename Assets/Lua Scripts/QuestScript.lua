@@ -22,7 +22,6 @@ function QuestScript.prototype:setQuest(quest)
 	--sets the quest of the script
 	self.quest = quest
 end
-	
 
 function QuestScript.prototype:OnStart()
 end

@@ -11,14 +11,16 @@ public class TestLua : MonoBehaviour {
 
         Debug.Log(luaState["x"]);
 
-        luaState.DoFile("Assets/luascripts/test.lua");
+        //luaState.DoFile("Assets/luascripts/test.lua");
         
         Debug.Log(luaState["b"]);
-        LuaManager.Instance.LoadScript("Assets/Lua Scripts/global.lua");
+        //LuaManager.Instance.LoadScript("Assets/Lua Scripts/global.lua");
+        LuaManager.Instance.LoadScript("Assets/Lua Scripts/QuestScript.lua");
         LuaManager.Instance.LoadScript("Assets/Lua Scripts/QuestScripts.lua");
-        LuaManager.Instance.RunChunk("test()");
+       // LuaManager.Instance.RunChunk("test()");
         //LuaManager.Instance.RunChunk("questsLoaded()");
-        LuaManager.Instance.LoadScript("Assets/Lua Scripts/TutorialQuest.lua");
+       // LuaManager.Instance.LoadScript("Assets/Lua Scripts/TutorialQuest.lua");
+        
 	
 	}
 	
