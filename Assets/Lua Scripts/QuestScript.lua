@@ -10,13 +10,18 @@ local function setAsIndex(metaTable)
 	metaTable.__index = QuestScript.prototype
 end
 
-function QuestScript:makeScript(object)
+function QuestScript:makeScript(object, quest)
 	--make script child of quest script
 	metaTable = {}
 	setAsIndex(metaTable)
 	setmetatable(object, metatable)
+	QuestScript.prototype.setQuest(object, quest)
 end
 	
+function QuestScript.prototype:setQuest(quest)
+	--sets the quest of the script
+	self.quest = quest
+end
 	
 
 function QuestScript.prototype:OnStart()
