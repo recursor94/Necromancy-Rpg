@@ -16,6 +16,7 @@ function QuestScript:makeScript(object, quest)
 	setAsIndex(metaTable)
 	setmetatable(object, metatable)
 	QuestScript.prototype.setQuest(object, quest)
+        return object
 end
 	
 function QuestScript.prototype:setQuest(quest)
